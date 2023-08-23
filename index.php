@@ -75,6 +75,7 @@
 
 <body>
     <!-- Left Panel -->
+    <!-- percobaan komen -->
     <div>
         <aside id="left-panel" class="left-panel" style="color: white;background-color: black;">
             <nav class="navbar navbar-expand-sm navbar-default" style="color: white;background-color: black;">
