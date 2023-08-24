@@ -83,11 +83,11 @@
                     <ul class="nav navbar-nav">
                         <li class="menu-title" style="color: white;">Belajar Bahasa Madura</li>
                         <li class="active" style="color: white;background-color: black;">
-                            <a href="index.html" style="color: white; "><i class="menu-icon ti-home"
+                            <a href="index.php" style="color: white; "><i class="menu-icon ti-home"
                                     style="color: white;"></i>Menu Utama </a>
                         </li>
                         <li>
-                            <a href="widgets.html" style="color: white;"> <i class="menu-icon ti-file"
+                            <a href="huruf.php" style="color: white;"> <i class="menu-icon ti-file"
                                     style="color: white;"></i>Pengenalan Huruf </a>
                         </li>
                         <li>
@@ -161,7 +161,7 @@
                 <!-- Widgets  -->
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
-                        <a href="#" style="text-decoration: none; color: aliceblue">
+                        <a href="huruf.php" style="text-decoration: none; color: aliceblue">
                             <div class="card" style="height: 90%;">
                                 <div class="card-body">
                                     <div class="stat-widget-five">
