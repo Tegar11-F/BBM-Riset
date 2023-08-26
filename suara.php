@@ -48,7 +48,7 @@
         //$hasil_fsa dipecah menjadi suku kata berdasarkan "-"
         $list_suku_kata = explode("-", $hasil_fsa);
 		
-        // print_r($list_suku_kata);
+        print_r($list_suku_kata);
 
         $files = null;
         //mengambil file audio suku kata di folder audio

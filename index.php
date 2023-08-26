@@ -30,107 +30,324 @@
     <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    #weatherWidget .currentDesc {
+        color: #ffffff !important;
+    }
 
-    <!-- Custom CSS -->
-    <link href="css/sb-admin.css" rel="stylesheet">
+    .traffic-chart {
+        min-height: 335px;
+    }
 
-    <!-- Morris Charts CSS -->
-    <link href="css/plugins/morris.css" rel="stylesheet">
+    #flotPie1 {
+        height: 150px;
+    }
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    #flotPie1 td {
+        padding: 3px;
+    }
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    #flotPie1 table {
+        top: 20px !important;
+        right: -10px !important;
+    }
+
+    .chart-container {
+        display: table;
+        min-width: 270px;
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #flotLine5 {
+        height: 105px;
+    }
+
+    #flotBarChart {
+        height: 150px;
+    }
+
+    #cellPaiChart {
+        height: 160px;
+    }
+    </style>
 
 </head>
 
 <body>
 
-    <div id="wrapper">
-        <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="index.php" class="navbar-brand">Belajar Bahasa Madura</a>
-            </div>
-
-            <!-- Top Menu Items -->
-            <ul class="nav navbar-right top-nav">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-gear"></i> Setting
-                        <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="admin/login.php"><i class="fa fa-fw fa-unlock"></i> Login</a>
+    <div>
+        <aside id="left-panel" class="left-panel" style="color: white;background-color: black;">
+            <nav class="navbar navbar-expand-sm navbar-default" style="color: white;background-color: black;">
+                <div id="main-menu" class="main-menu collapse navbar-collapse"
+                    style="color: white;background-color: black;">
+                    <ul class="nav navbar-nav">
+                        <li class="menu-title" style="color: white;">Belajar Bahasa Madura</li>
+                        <li class="active" style="color: white;background-color: black;">
+                            <a href="utama.php" style="color: white; "><i class="menu-icon ti-home"
+                                    style="color: white;"></i>Menu Utama </a>
                         </li>
                         <li>
-                            <a href="kontak.php"><i class="fa fa-fw fa-envelope"></i> Kontak</a>
+                            <a href="huruf.php" style="color: white;"> <i class="menu-icon ti-file"
+                                    style="color: white;"></i>Pengenalan Huruf </a>
                         </li>
                         <li>
-                            <a href="tentang.php"><i class="fa fa-fw fa-info"></i> Tentang</a>
+                            <a href="suku-kata.php" style="color: white;"> <i class="menu-icon ti-files"
+                                    style="color: white;"></i>Pengenalan Suku Kata </a>
+                        </li>
+                        <li>
+                            <a href="kata.php" style="color: white;"> <i class="menu-icon ti-book"
+                                    style="color: white;"></i>Pengenalan Kata </a>
+                        </li>
+                        <li>
+                            <a href="kalimat-dasar.php" style="color: white;"> <i class="menu-icon ti-agenda"
+                                    style="color: white;"></i>Pengenalan Kalimat </a>
+                        </li>
+                        <li>
+                            <a href="kamus.php" style="color: white;"> <i class="menu-icon ti-search"
+                                    style="color: white;"></i>Kamus Terjemahan </a>
+                        </li>
+                        <li>
+                            <a href="kuis.php" style="color: white;"> <i class="menu-icon ti-pencil-alt"
+                                    style="color: white;"></i>Kuis </a>
+                        </li>
+                        <li>
+                            <a href="petunjuk.php" style="color: white;"> <i class="menu-icon ti-info"
+                                    style="color: white;"></i>Petunjuk </a>
                         </li>
                     </ul>
-                </li>
-            </ul>
-
+                </div>
+            </nav>
+        </aside>
     </div>
-    <!-- /.navbar-collapse -->
-    </nav>
 
-    <div id="page-wrapper" style="background:url(image/bg.jpg);">
-        <div class="container-fluid">
-            <div align="center" style="margin-top:100px; margin-bottom:50px;">
-                <img src="image/bbm.png" height="300px" width="370px">
-                <hr>
+    <!-- /#left-panel -->
+    <!-- Right Panel -->
+    <div id="right-panel" class="right-panel">
+        <!-- Header-->
+        <header id="header" class="header">
+            <div class="top-left">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="./"><img src="image/logo-bbm.png" alt="Logo"></a>
+                    <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
+                    <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
+                </div>
             </div>
-            <div class="col-lg-12" style="text-align:center; margin-bottom:50px;">
-                <a href="utama.php" class="btn btn-primary btn-lg" role="button">MULAI BELAJAR!</a>
+            <div class="top-right">
+                <div class="header-menu">
+                    <div class="header-left">
+                        <!-- <button class="search-trigger"><i class="fa fa-search"></i></button> -->
+                        <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search w-100">
+                            <input type="text" class="form-control" placeholder="             Searching" />
+                        </form>
+                    </div>
+
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon ti-settings"> Pengaturan</i>
+                        </a>
+                        <div class="user-menu dropdown-menu">
+                            <a class="nav-link" href="admin/login.php"><i class="ti-unlock"></i>Login</a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+        </header>
+        <!-- /#header -->
+        <!-- Content -->
+        <div class="content">
+            <!-- Animated -->
+            <div class="animated fadeIn">
+                <!-- Widgets  -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="huruf.php" style="text-decoration: none; color: aliceblue">
+                            <div class="card" style="height: 90%;">
+                                <div class="card-body">
+                                    <div class="stat-widget-five">
+                                        <div class="stat-icon dib flat-color-1">
+                                            <i class="pe-7s-cash"></i>
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="text-left dib">
+                                                <div class="stat-heading">Mengenal</div>
+                                                <div class="stat-text"><b> Huruf </b><br> B. Madura</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <a href="suku-kata.php" style="text-decoration: none; color: aliceblue">
+                            <div class="card" style="height: 90%;">
+                                <div class="card-body">
+                                    <div class="stat-widget-five">
+                                        <div class="stat-icon dib flat-color-2">
+                                            <i class="pe-7s-cart"></i>
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="text-left dib">
+                                                <div class="stat-heading">Mengenal</div>
+                                                <div class="stat-text"><b>Suku Kata</b> <br> B. Madura</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <a href="kata.php" style="text-decoration: none; color: aliceblue">
+                            <div class="card" style="height: 90%;">
+                                <div class="card-body">
+                                    <div class="stat-widget-five">
+                                        <div class="stat-icon dib flat-color-3">
+                                            <i class="pe-7s-browser"></i>
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="text-left dib">
+                                                <div class="stat-heading">Mengenal</div>
+                                                <div class="stat-text"><b> Kata</b> <br> B. Madura</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <a href="kalimat-dasar.php" style="text-decoration: none; color: aliceblue">
+                            <div class="card" style="height: 90%;">
+                                <div class="card-body">
+                                    <div class="stat-widget-five">
+                                        <div class="stat-icon dib flat-color-4">
+                                            <i class="pe-7s-users"></i>
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="text-left dib">
+                                                <div class="stat-heading">Mengenal</div>
+                                                <div class="stat-text"><b> Kalimat Dasar</b> <br> B. Madura</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="kamus.php" style="text-decoration: none; color: aliceblue">
+                            <div class="card" style="height: 90%;">
+                                <div class="card-body">
+                                    <div class="stat-widget-five">
+                                        <div class="stat-icon dib flat-color-1">
+                                            <i class="pe-7s-cash"></i>
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="text-left dib">
+                                                <div class="stat-heading">Terjemahan</div>
+                                                <div class="stat-text"><b> Indonesia</b> - <b>Madura</b></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="kuis.php" style="text-decoration: none; color: aliceblue">
+                            <div class="card" style="height: 90%;">
+                                <div class="card-body">
+                                    <div class="stat-widget-five">
+                                        <div class="stat-icon dib flat-color-1">
+                                            <i class="pe-7s-cash"></i>
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="text-left dib">
+                                                <div class="stat-heading">Ujian</div>
+                                                <div class="stat-text"><b>Kuis</b></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <a href="petunjuk.php" style="text-decoration: none; color: aliceblue">
+                            <div class="card" style="height: 90%;">
+                                <div class="card-body">
+                                    <div class="stat-widget-five">
+                                        <div class="stat-icon dib flat-color-1">
+                                            <i class="pe-7s-info"></i>
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="text-left dib">
+                                                <div class="stat-heading">Petunjuk</div>
+                                                <div class="stat-text"><b>Pembelajaran</b></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- /Widgets -->
+                <!-- /#add-category -->
+            </div>
+            <!-- .animated -->
         </div>
-        <!-- /.container-fluid -->
-
-    </div>
-    <!-- /#page-wrapper -->
-
+        <!-- /.content -->
+        <div class="clearfix"></div>
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-inner bg-white">
+                <div class="row">
+                    <div class="col-sm-6">
+                        &copy; Universitas Trunojoyo Madura
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /.site-footer -->
     </div>
     <!-- /#wrapper -->
 
-    <!-- <div style="position:fixed; bottom:0;">
-        <audio controls="controls" autoplay="false">
-            <source src="audio/Together.mp3" type="audio/mpeg" />
-            <embed src="Together.mp3" />
-        </audio>
-    </div> -->
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
-    <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
+    <!--  Chart js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.bundle.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!--Chartist Chart-->
+    <script src="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartist-plugin-legend@0.6.2/chartist-plugin-legend.min.js"></script>
 
-    <!-- Morris Charts JavaScript -->
-    <script src="js/plugins/morris/raphael.min.js"></script>
-    <script src="js/plugins/morris/morris.min.js"></script>
-    <script src="js/plugins/morris/morris-data.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $('#page-wrapper').fadeIn(1000);
-    });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flot-pie@1.0.0/src/jquery.flot.pie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flot-spline@0.0.1/js/jquery.flot.spline.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/simpleweather@3.1.0/jquery.simpleWeather.min.js"></script>
+    <script src="assets/js/init/weather-init.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.js"></script>
+    <script src="assets/js/init/fullcalendar-init.js"></script>
+
+    <!--Local Stuff-->
+
 </body>
 
 </html>
