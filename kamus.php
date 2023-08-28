@@ -26,8 +26,8 @@
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <link rel="apple-touch-icon" href="https://i.imgur.com/QRAUqs9.png">
-    <link rel="shortcut icon" href="https://i.imgur.com/QRAUqs9.png">
+    <link rel="apple-touch-icon" href="image/sakera.png">
+    <link rel="shortcut icon" href="image/sakera.png">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
@@ -100,7 +100,7 @@
                     <ul class="nav navbar-nav">
                         <li class="menu-title" style="color: white;">Belajar Bahasa Madura</li>
                         <li class="active" style="color: white;background-color: black;">
-                            <a href="utama.php" style="color: white; "><i class="menu-icon ti-home"
+                            <a href="index.php" style="color: white; "><i class="menu-icon ti-home"
                                     style="color: white;"></i>Menu Utama </a>
                         </li>
                         <li>
@@ -144,7 +144,7 @@
         <header id="header" class="header">
             <div class="top-left">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="./"><img src="images/logo.png" alt="Logo"></a>
+                    <a class="navbar-brand" href="./"><img src="image/logo-bbm.png" alt="Logo"></a>
                     <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
                     <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
                 </div>
@@ -178,7 +178,7 @@
                         </h2>
                         <ol class="breadcrumb">
                             <li>
-                                <i class="fa fa-dashboard"></i> <a href="utama.php">Menu Utama</a>
+                                <i class="fa fa-dashboard"></i> <a href="index.php">Menu Utama</a>
                             </li>
                             <li class="active">
                                 <i class="fa fa-table"></i> Kamus
@@ -310,7 +310,7 @@
                 <!-- /.row -->
 
                 <div class="col-lg-12" style="text-align:right;">
-                    <a href="utama.php" class="btn btn-lg btn-primary" role="button">Menu</a>
+                    <a href="index.php" class="btn btn-lg btn-primary" role="button">Menu</a>
                     <a href="kuis.php" class="btn btn-lg btn-primary" role="button">Kuis »</a>
                 </div>
 
