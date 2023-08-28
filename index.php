@@ -307,20 +307,20 @@
         </div>
         <!-- /.content -->
         <div class="clearfix"></div>
-
-    </div>
-    <!-- /#wrapper -->
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-inner bg-white">
-            <div class="row">
-                <div class="col-sm-6 " style="text-align:center">
-                    &copy; Universitas Trunojoyo Madura
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-inner bg-white">
+                <div class="row">
+                    <div class="col-sm-6 ">
+                        &copy; Universitas Trunojoyo Madura
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- /.site-footer -->
+        </footer>
+        <!-- /.site-footer -->
+    </div>
+    <!-- /#wrapper -->
+
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
