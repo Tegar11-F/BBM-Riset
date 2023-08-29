@@ -168,7 +168,8 @@
                                 <div class="card-body">
                                     <div class="stat-widget-five">
                                         <div class="stat-icon dib flat-color-1">
-                                            <i class="pe-7s-cash"></i>
+                                            <img src="image/icon-huruf.png" width="81px" alt="logo">
+                                            <!-- <i class="pe-7s-cash"></i> -->
                                         </div>
                                         <div class="stat-content">
                                             <div class="text-left dib">
@@ -188,7 +189,8 @@
                                 <div class="card-body">
                                     <div class="stat-widget-five">
                                         <div class="stat-icon dib flat-color-2">
-                                            <i class="pe-7s-cart"></i>
+                                            <img src="image/ikon-suku.png" width="81px" alt="logo">
+                                            <!-- <i class="pe-7s-cart"></i> -->
                                         </div>
                                         <div class="stat-content">
                                             <div class="text-left dib">
@@ -208,7 +210,8 @@
                                 <div class="card-body">
                                     <div class="stat-widget-five">
                                         <div class="stat-icon dib flat-color-3">
-                                            <i class="pe-7s-browser"></i>
+                                            <img src="image/icon-kata.png" width="81px" alt="logo">
+                                            <!-- <i class="pe-7s-browser"></i> -->
                                         </div>
                                         <div class="stat-content">
                                             <div class="text-left dib">
@@ -228,7 +231,8 @@
                                 <div class="card-body">
                                     <div class="stat-widget-five">
                                         <div class="stat-icon dib flat-color-4">
-                                            <i class="pe-7s-users"></i>
+                                            <img src="image/icon-kalimat.png" width="81px" alt="logo">
+                                            <!-- <i class="pe-7s-users"></i> -->
                                         </div>
                                         <div class="stat-content">
                                             <div class="text-left dib">
@@ -247,7 +251,8 @@
                                 <div class="card-body">
                                     <div class="stat-widget-five">
                                         <div class="stat-icon dib flat-color-1">
-                                            <i class="pe-7s-cash"></i>
+                                            <img src="image/icon-kamus.png" width="81px" alt="logo">
+                                            <!-- <i class="pe-7s-cash"></i> -->
                                         </div>
                                         <div class="stat-content">
                                             <div class="text-left dib">
@@ -266,7 +271,8 @@
                                 <div class="card-body">
                                     <div class="stat-widget-five">
                                         <div class="stat-icon dib flat-color-1">
-                                            <i class="pe-7s-cash"></i>
+                                            <img src="image/icon-kuis.png" width="81px" alt="logo">
+                                            <!-- <i class="pe-7s-cash"></i> -->
                                         </div>
                                         <div class="stat-content">
                                             <div class="text-left dib">
@@ -285,7 +291,8 @@
                                 <div class="card-body">
                                     <div class="stat-widget-five">
                                         <div class="stat-icon dib flat-color-1">
-                                            <i class="pe-7s-info"></i>
+                                            <img src="image/icon-petunjuk.png" width="81px" alt="logo">
+                                            <!-- <i class="pe-7s-info"></i> -->
                                         </div>
                                         <div class="stat-content">
                                             <div class="text-left dib">
