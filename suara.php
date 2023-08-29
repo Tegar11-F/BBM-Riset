@@ -48,47 +48,31 @@
         //$hasil_fsa dipecah menjadi suku kata berdasarkan "-"
         $list_suku_kata = explode("-", $hasil_fsa);
 		
-        print_r($list_suku_kata);
+        //print_r($list_suku_kata);
 
         $files = null;
-        //mengambil file audio suku kata di folder audio
+
+        //mengeluarkan output suara sesuai array suku kata 
         foreach ($list_suku_kata as $suku) {
-            $nama_file = "audio/" . $suku.".mp3";
-            //apabila ditemukan maka digabungkan (menggabungkan audio) ke dalam $files
-            if (is_file($nama_file)) {  // Check if it's a file before using file_get_contents
+            $nama_file = "audio/".$suku.".mp3";
+            //mengambil file suara yang sesuai dengan suku kata
+            if (file_exists($nama_file)) {
                 $files .= file_get_contents($nama_file);
             } else {
                 //harusnya beep
                 $files .= file_get_contents("audio/beep.mp3");
             }
         }
-
-        //apabila file tidak kosong maka dibuat file suara
+        //menggabungkan suara audio ke dalam file "suara.mp3"
         if (!empty($files)) {
-            $suara = file_put_contents("suara", $files);
+            $suara = file_put_contents("suara.mp3", $files);
         }
-
-        require_once 'Mobile_Detect.php';
-        $detect = new Mobile_Detect;
-
-        // jika suara ada maka audio dimainkan
-        if (file_exists('suara')) {
-            if ($detect->isMobile() || $detect->isTablet()) {
-                return '
-                        <audio src="suara" autoplay="true" controls="true">
-                    ';
-            } else {
-                return '
-                        <center>
-                            <embed wmode="transparent" src="music.swf?url=suara"
-                                    quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer"
-                                    type="application/x-shockwave-flash" width="150" height="50">
-                            </embed>
-                        </center>
-                    ';
-            }
+        
+        //mengecek file suara mp3 apakah tersedia atau tidak
+        if (file_exists('suara.mp3')) {
+            echo '<audio src="suara.mp3?random='.md5(date('YmdHis')).'" autoplay="true" controls="true">';
         } else {
-            echo ' Maaf, suara tidak tersedia ';
+            echo 'Maaf, suara tidak tersedia';
         }
     }
 

@@ -285,7 +285,27 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-12 col-md-12">
+                    <div class="col-lg-6 col-md-6">
+                        <a href="petunjuk.php" style="text-decoration: none; color: aliceblue">
+                            <div class="card" style="height: 90%;">
+                                <div class="card-body">
+                                    <div class="stat-widget-five">
+                                        <div class="stat-icon dib flat-color-1">
+                                            <img src="image/icon-petunjuk.png" width="81px" alt="logo">
+                                            <!-- <i class="pe-7s-info"></i> -->
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="text-left dib">
+                                                <div class="stat-heading">Pengelompokan</div>
+                                                <div class="stat-text"><b>Kata Khusus</b></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
                         <a href="petunjuk.php" style="text-decoration: none; color: aliceblue">
                             <div class="card" style="height: 90%;">
                                 <div class="card-body">
