@@ -237,7 +237,8 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <h4>Masukkan Kalimat</h4>
-                            <textarea name="input" id="input" class="form-control" rows="7"><?php if(isset($_POST['input']))
+                            <textarea name="input" id="input" class="form-control" rows="7"
+                                placeholder="tekan tombol spasi setelah input kata"><?php if(isset($_POST['input']))
                 echo stripslashes($_POST['input']);?></textarea>
                             <br>
                             <button type="button" class="btn btn-warning" onClick="karakter_e()">Karakter

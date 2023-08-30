@@ -18,9 +18,9 @@
         require_once("fsa.php");
 
         //cek file suara sekaligus dihapus jika file yang lama sudah ada
-        if (file_exists('suara')) {
+        if (file_exists('suara.mp3')) {
             //hapus file suara
-            unlink('suara');
+            unlink('suara.mp3');
         }
 
         //membuang noise "\" yang biasanya berbeda tiap browser
@@ -48,7 +48,7 @@
         //$hasil_fsa dipecah menjadi suku kata berdasarkan "-"
         $list_suku_kata = explode("-", $hasil_fsa);
 		
-        //print_r($list_suku_kata);
+        // print_r($list_suku_kata);
 
         $files = null;
 
@@ -70,7 +70,7 @@
         
         //mengecek file suara mp3 apakah tersedia atau tidak
         if (file_exists('suara.mp3')) {
-            echo '<audio src="suara.mp3?random='.md5(date('YmdHis')).'" autoplay="true" controls="true">';
+            echo '<audio src="suara.mp3?random='.md5(date('YmdHis')).'" controls="true">';
         } else {
             echo 'Maaf, suara tidak tersedia';
         }
