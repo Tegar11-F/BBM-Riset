@@ -219,10 +219,7 @@
                             <div class="slide" id="sukukata1">
                                 <section class="middle">
                                     <div class="table-responsive" align="center">
-                                        <table id="hp" class="table table-bordered table-hover table-striped" style="text-align:center; @media (max-width: 480px) {
-#hp{
-	width: 1000px;
-}">
+                                        <table id="hp" class="table table-bordered table-hover table-striped" style="text-align:center; @media (max-width: 480px) {#hp{width: 1000px;}">
                                             <tbody id="halamansatu">
                                                 <?php 
 												//require_once("koneksi.php");
