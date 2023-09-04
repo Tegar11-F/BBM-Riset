@@ -219,8 +219,10 @@
                             <div class="slide" id="sukukata1">
                                 <section class="middle">
                                     <div class="table-responsive" align="center">
-                                        <table class="table table-bordered table-hover table-striped"
-                                            style="text-align:center">
+                                        <table id="hp" class="table table-bordered table-hover table-striped" style="text-align:center; @media (max-width: 480px) {
+#hp{
+	width: 1000px;
+}">
                                             <tbody id="halamansatu">
                                                 <?php 
 												//require_once("koneksi.php");
@@ -251,7 +253,7 @@
                             <div class="slide" id="sukukataVk">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php 
@@ -274,7 +276,7 @@
                             <div class="slide" id="sukukata2">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -302,7 +304,7 @@
                             <div class="slide" id="sukukata3">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -329,7 +331,7 @@
                             <div class="slide" id="sukukata4">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -356,7 +358,7 @@
                             <div class="slide" id="sukukata5">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -383,7 +385,7 @@
                             <div class="slide" id="sukukataVk2">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -410,7 +412,7 @@
                             <div class="slide" id="sukukata6">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -437,7 +439,7 @@
                             <div class="slide" id="sukukata7">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -464,7 +466,7 @@
                             <div class="slide" id="sukukata8">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -491,7 +493,7 @@
                             <div class="slide" id="sukukata9">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -518,7 +520,7 @@
                             <div class="slide" id="sukukata10">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -545,7 +547,7 @@
                             <div class="slide" id="sukukata12">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -572,7 +574,7 @@
                             <div class="slide" id="sukukata13">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -599,7 +601,7 @@
                             <div class="slide" id="sukukata14">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -626,7 +628,7 @@
                             <div class="slide" id="sukukata15">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -653,7 +655,7 @@
                             <div class="slide" id="sukukata16">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -680,7 +682,7 @@
                             <div class="slide" id="sukukata17">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -707,7 +709,7 @@
                             <div class="slide" id="sukukata18">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -734,7 +736,7 @@
                             <div class="slide" id="sukukata19">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -761,7 +763,7 @@
                             <div class="slide" id="sukukata20">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -788,7 +790,7 @@
                             <div class="slide" id="sukukata21">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -815,7 +817,7 @@
                             <div class="slide" id="sukukata22">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -842,7 +844,7 @@
                             <div class="slide" id="sukukata23">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -869,7 +871,7 @@
                             <div class="slide" id="sukukata24">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -896,7 +898,7 @@
                             <div class="slide" id="sukukata25">
                                 <section class="middle">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped"
+                                        <table id="hp" class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <tbody>
                                                 <?php
@@ -926,7 +928,7 @@
 
                         <aside id="help" class="sidebar invisible" style="display: hidden;">
                             <!-- Defining sidebar help -->
-                            <table>
+                            <table> id="hp"
                                 <caption>Bantuan</caption>
                                 <tr>
                                     <th>Pindah selanjutnya/kembali</th>

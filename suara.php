@@ -70,7 +70,7 @@
         
         //mengecek file suara mp3 apakah tersedia atau tidak
         if (file_exists('suara.mp3')) {
-            echo '<audio src="suara.mp3?random='.md5(date('YmdHis')).'" controls="true">';
+            echo '<audio src="suara.mp3?random='.md5(date('YmdHis')).'" autoplay="true" controls="true">';
         } else {
             echo 'Maaf, suara tidak tersedia';
         }
