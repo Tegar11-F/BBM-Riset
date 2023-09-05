@@ -180,9 +180,6 @@
                             <li>
                                 <i class="fa fa-dashboard"></i> <a href="index.php">Menu Utama</a>
                             </li>
-                            <li>
-                                <a href="huruf.php">Mengenal Huruf</a>
-                            </li>
                             <li class="active">
                                 Suku Kata Bahasa Madura
                             </li>

@@ -1,7 +1,7 @@
 <?php
 
 
-require_once("suara.php");
+require_once("suara1.php");
 function indonesia_madura($kalimat,$tingkat){
 
 // require_once("koneksi.php");

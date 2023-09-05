@@ -172,24 +172,9 @@
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="page-header" style="margin-bottom: 2px;margin-top: 2px;padding-bottom: 5px;">
-                            Kuis
-                        </h2>
                         <ol class="breadcrumb">
                             <li>
                                 <i class="fa fa-dashboard"></i> <a href="index.php">Menu Utama</a>
-                            </li>
-                            <li>
-                                <a href="huruf.php">Mengenal Huruf</a>
-                            </li>
-                            <li>
-                                <a href="suku-kata.php">Mengenal Suku Kata</a>
-                            </li>
-                            <li>
-                                <a href="kata.php">Mengenal Kata</a>
-                            </li>
-                            <li class="active">
-                                <a hreff="kalimat-dasar.php"> Mengenal Kalimat Bahasa Madura</a>
                             </li>
                             <li class="active">
                                 Kuis
@@ -266,14 +251,16 @@
                                 onpageshow="if (event.persisted) noBack();" onunload>
                                 <!-- Defining single slide -->
                                 <section class="middle">
-                                    <h3 style="color:#31708f">
-                                        <strong>Masukkan Nama :</strong>
-                                    </h3>
-                                    <input type="text" style="text-align:center; width:350px; font-size:20px"
-                                        name="nama" id="nama">
-                                    <br>
-                                    <button type="button" id="left-init-key" name="s1" class="btn btn-primary">Mulai
-                                        Kuis</button>
+                                    <div id="cobakuis">
+                                        <h3 style="color:#31708f">
+                                            <strong>Masukkan Nama :</strong>
+                                        </h3>
+                                        <input type="text" style="text-align:center; width:300px; font-size:20px"
+                                            name="nama" id="nama">
+                                        <br>
+                                        <button type="button" id="left-init-key" name="s1" class="btn btn-primary">Mulai
+                                            Kuis</button>
+                                    </div>
                                 </section>
                             </div>
 
@@ -281,8 +268,9 @@
                                 onpageshow="if (event.persisted) noBack();" onunload>
                                 <section class="middle">
                                     <h2 style="color:#31708f"><strong>SOAL 1</strong></h2>
-                                    <h3>Soal berupa Gambar Bagian Tubuh Manusia</h3>
-                                    <h3>Apa Nama Gambar Tersebut <br> Dalam Bahasa Madura <em>"Èngghi Bhunten"</em></h3>
+                                    <h3>Soal berupa Gambar <br> Bagian Tubuh Manusia</h3>
+                                    <h3>Apa Nama Gambar Tersebut <br> Dalam Bahasa Madura <br> <em>"Èngghi Bhunten"</em>
+                                    </h3>
                                     <button type="button" id="nav-next" name="t1"
                                         class="btn btn-primary">Lanjutkan</button>
                                 </section>
@@ -291,7 +279,7 @@
                             <div class="slide" id="soal1" onload="noBack();" onpageshow="if (event.persisted) noBack();"
                                 onunload>
                                 <section class="middle">
-                                    <div class="table-responsive">
+                                    <div class="table-responsive" id="coba">
                                         <table class="table table-bordered table-hover table-striped"
                                             style="text-align:center; width:400px; margin-left:40px; float:left;">
                                             <thead>
@@ -303,7 +291,7 @@
                                             <tbody>
                                                 <?php
                                         $angka=0;
-                                        $q = mysqli_query($koneksi, "select `madura` from `kuis` order by rand() limit 5;");
+                                        $q = mysqli_query($koneksi, "select `madura` from `kuis` order by rand() limit 4;");
                                         while($h = mysqli_fetch_array($q)){?>
                                                 <tr>
                                                     <td><img src="image/<?php echo  htmlspecialchars($h[0]); ?>.png"
@@ -316,20 +304,12 @@
                                                     </td>
                                                 </tr>
                                                 <?php }?>
+
                                             </tbody>
+
                                         </table>
 
-                                        <input type="hidden" id="focusedField" />
-                                        <br>
-                                        <button type="button" class="btn btn-warning" onClick="karakter_e()">Karakter
-                                            &egrave;</button>
-                                        <br>
-                                        <button type="button" class="btn btn-success" onClick="karakter_a()">Karakter
-                                            &acirc;</button>
-                                        <br>
-                                        <button type="button" id="nav-next" class="btn btn-danger"
-                                            onClick="koreksi_soal_gambar()">Selesai</button>
-                                        <br>
+
 
                                         <script type="text/javascript">
                                         function koreksi_soal_gambar() {
@@ -361,6 +341,13 @@
                                         }
                                         </script>
                                     </div>
+                                    <input type="hidden" id="focusedField" />
+                                    <button type="button" class="btn btn-warning" onClick="karakter_e()">Karakter
+                                        &egrave;</button>
+                                    <button type="button" class="btn btn-success" onClick="karakter_a()">Karakter
+                                        &acirc;</button>
+                                    <button type="button" id="nav-next" class="btn btn-danger"
+                                        onClick="koreksi_soal_gambar()">Selesai</button>
                                 </section>
                             </div>
 
@@ -377,7 +364,7 @@
                             <div class="slide" id="soal2" onload="noBack();" onpageshow="if (event.persisted) noBack();"
                                 onunload>
                                 <section class="middle">
-                                    <div class="table-responsive" align="center">
+                                    <div class="table-responsive" id="coba">
                                         <table class="table table-bordered table-hover table-striped"
                                             style="text-align:center; width:400px; margin-left:40px; float:left;">
                                             <thead>
@@ -463,7 +450,7 @@
                             <div class="slide" id="soal3" onload="noBack();" onpageshow="if (event.persisted) noBack();"
                                 onunload>
                                 <section class="middle">
-                                    <div class="table-responsive" align="center">
+                                    <div class="table-responsive" id="coba">
                                         <table class="table table-bordered table-hover table-striped"
                                             style="text-align:center; width:400px; margin-left:40px; float:left;">
                                             <thead>

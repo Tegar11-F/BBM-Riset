@@ -172,21 +172,9 @@
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="page-header" style="margin-bottom: 2px;margin-top: 2px;padding-bottom: 5px;">
-                            Mengenal Kalimat Bahasa Madura
-                        </h2>
                         <ol class="breadcrumb">
                             <li>
                                 <i class="fa fa-dashboard"></i> <a href="index.php">Menu Utama</a>
-                            </li>
-                            <li>
-                                <a href="huruf.php">Mengenal Huruf</a>
-                            </li>
-                            <li>
-                                <a href="suku-kata.php">Mengenal Suku Kata</a>
-                            </li>
-                            <li>
-                                <a href="kata.php">Mengenal Kata</a>
                             </li>
                             <li class="active">
                                 Kalimat Bahasa Madura
@@ -208,8 +196,8 @@
                                 <!-- Defining single slide -->
                                 <section class="middle">
                                     <h2 style="color:#31708f">
-                                        <strong>Kalimat adalah gabungan dua kata <br>
-                                            atau lebih dan harus memiliki subyek <br>
+                                        <strong>Kalimat adalah gabungan <br> dua kata
+                                            atau lebih<br> dan harus memiliki subyek <br>
                                             dan predikat sebagai syarat <br>
                                             minimal sebuah kalimat.</strong>
                                     </h2>
@@ -221,12 +209,16 @@
                             <div class="slide" id="tingkat">
                                 <section class="middle">
                                     <h2 style="color:#31708f">
-                                        <strong>Pada dasarnya bahasa Madura <br> dibagi menjadi tiga tingkat bahasa:
+                                        <strong>Pada dasarnya bahasa Madura <br> dibagi menjadi <br>tiga tingkat bahasa:
                                         </strong>
                                     </h2>
-                                    <h3>Tingkat Bahasa Umum <em>(iyâ-enjâ’)</em></h2>
-                                        <h3>Tingkat Bahasa Menengah <em>(engghi-enten)</em></h2>
-                                            <h3>Tingkat Bahasa Tinggi/Halus <em>(Èngghi-bhunten)</em></h2>
+                                    <hr>
+                                    <h3>Tingkat Bahasa Umum <br> <em>(iyâ-enjâ’)</em></h2>
+                                        <hr>
+                                        <h3>Tingkat Bahasa Menengah <br> <em>(engghi-enten)</em></h2>
+                                            <hr>
+                                            <h3>Tingkat Bahasa Tinggi/Halus <br> <em>(Èngghi-bhunten)</em></h2>
+                                                <hr>
                                 </section>
                             </div>
 

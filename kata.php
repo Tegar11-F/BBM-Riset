@@ -172,18 +172,9 @@
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="page-header" style="margin-bottom: 2px;margin-top: 2px;padding-bottom: 5px;">
-                            Mengenal Kata Bahasa Madura
-                        </h2>
                         <ol class="breadcrumb">
                             <li>
                                 <i class="fa fa-dashboard"></i> <a href="index.php">Menu Utama</a>
-                            </li>
-                            <li>
-                                <a href="huruf.php">Mengenal Huruf</a>
-                            </li>
-                            <li>
-                                <a href="suku-kata.php">Mengenal Suku Kata</a>
                             </li>
                             <li class="active">
                                 Kata Bahasa Madura
@@ -219,7 +210,7 @@
 
                             <div class="slide" id="kata1">
                                 <section class="middle">
-                                    <div class="table-responsive">
+                                    <div class="table-responsive" id="coba">
                                         <table class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <thead>
@@ -268,103 +259,107 @@
 
                             <div class="slide" id="kata2">
                                 <section class="middle">
-                                    <table class="table table-bordered table-hover table-striped"
-                                        style="text-align:center">
-                                        <thead>
-                                            <tr>
-                                                <th style="text-align:center">Kata</th>
-                                                <th style="text-align:center">Suku Kata</th>
-                                                <th style="text-align:center">Terjemahan</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php
+                                    <div class="table-responsive" id="coba">
+                                        <table class="table table-bordered table-hover table-striped"
+                                            style="text-align:center">
+                                            <thead>
+                                                <tr>
+                                                    <th style="text-align:center">Kata</th>
+                                                    <th style="text-align:center">Suku Kata</th>
+                                                    <th style="text-align:center">Terjemahan</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php
                                 $q = mysqli_query($koneksi, "SELECT `madura`,`indonesia` FROM `kamus` WHERE `madura` LIKE 'b%' ORDER BY RAND() LIMIT 5;");
                                 while ($h = mysqli_fetch_array($q)) {
                                 ?>
-                                            <tr>
-                                                <td><button type="button" class="btn btn-info"
-                                                        onClick=play("<?php echo $h['madura']; ?>")><?php echo $h['madura']; ?></button>
-                                                </td>
-                                                <td>
-                                                    <?php
+                                                <tr>
+                                                    <td><button type="button" class="btn btn-info"
+                                                            onClick=play("<?php echo $h['madura']; ?>")><?php echo $h['madura']; ?></button>
+                                                    </td>
+                                                    <td>
+                                                        <?php
                                             $input_kata = proses_fsa($h['madura']);
                                             $pecah = explode('-', $input_kata);
                                             $i = 0;
                                             while ($i < sizeof($pecah) - 1) {
                                             ?>
-                                                    <button type="button" class="btn btn-info"
-                                                        onClick=play("<?php echo $pecah[$i]; ?>")><?php echo $pecah[$i]; ?></button>
-                                                    <?php
+                                                        <button type="button" class="btn btn-info"
+                                                            onClick=play("<?php echo $pecah[$i]; ?>")><?php echo $pecah[$i]; ?></button>
+                                                        <?php
                                                 $i++;
                                             }
                                             ?>
-                                                </td>
-                                                <td>
-                                                    <h5><?php echo $h['indonesia']; ?></h5>
-                                                </td>
-                                            </tr>
-                                            <?php
+                                                    </td>
+                                                    <td>
+                                                        <h5><?php echo $h['indonesia']; ?></h5>
+                                                    </td>
+                                                </tr>
+                                                <?php
                                 }
                                 ?>
-                                        </tbody>
-                                    </table>
-                                    <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
+                                            </tbody>
+                                        </table>
+                                        <button type="button" class="btn btn-primary"
+                                            onClick="window.location.reload()">Acak Kata</button>
                                 </section>
                             </div>
 
                             <div class="slide" id="kata3">
                                 <section class="middle">
-                                    <table class="table table-bordered table-hover table-striped"
-                                        style="text-align:center">
-                                        <thead>
-                                            <tr>
-                                                <th style="text-align:center">Kata</th>
-                                                <th style="text-align:center">Suku Kata</th>
-                                                <th style="text-align:center">Terjemahan</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php
+                                    <div class="table-responsive" id="coba">
+                                        <table class="table table-bordered table-hover table-striped"
+                                            style="text-align:center">
+                                            <thead>
+                                                <tr>
+                                                    <th style="text-align:center">Kata</th>
+                                                    <th style="text-align:center">Suku Kata</th>
+                                                    <th style="text-align:center">Terjemahan</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php
                                 $q = mysqli_query($koneksi, "SELECT `madura`,`indonesia` FROM `kamus` WHERE `madura` LIKE 'c%' ORDER BY RAND() LIMIT 5;");
                                 while ($h = mysqli_fetch_array($q)) {
                                 ?>
-                                            <tr>
-                                                <td><button type="button" class="btn btn-warning"
-                                                        onClick=play("<?php echo $h['madura']; ?>")><?php echo $h['madura']; ?></button>
-                                                </td>
-                                                <td>
-                                                    <?php
+                                                <tr>
+                                                    <td><button type="button" class="btn btn-warning"
+                                                            onClick=play("<?php echo $h['madura']; ?>")><?php echo $h['madura']; ?></button>
+                                                    </td>
+                                                    <td>
+                                                        <?php
                                             $input_kata = proses_fsa($h['madura']);
                                             $pecah = explode('-', $input_kata);
                                             $i = 0;
                                             while ($i < sizeof($pecah) - 1) {
                                             ?>
-                                                    <button type="button" class="btn btn-warning"
-                                                        onClick=play("<?php echo $pecah[$i]; ?>")><?php echo $pecah[$i]; ?></button>
-                                                    <?php
+                                                        <button type="button" class="btn btn-warning"
+                                                            onClick=play("<?php echo $pecah[$i]; ?>")><?php echo $pecah[$i]; ?></button>
+                                                        <?php
                                                 $i++;
                                             }
                                             ?>
-                                                </td>
-                                                <td>
-                                                    <h5><?php echo $h['indonesia']; ?></h5>
-                                                </td>
-                                            </tr>
-                                            <?php
+                                                    </td>
+                                                    <td>
+                                                        <h5><?php echo $h['indonesia']; ?></h5>
+                                                    </td>
+                                                </tr>
+                                                <?php
                                 }
                                 ?>
 
-                                        </tbody>
-                                    </table>
-                                    <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
+                                            </tbody>
+                                        </table>
+                                        <button type="button" class="btn btn-primary"
+                                            onClick="window.location.reload()">Acak Kata</button>
                                 </section>
                             </div>
+                        </div>
 
-                            <div class="slide" id="kata4">
-                                <section class="middle">
+                        <div class="slide" id="kata4">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -408,12 +403,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata5">
-                                <section class="middle">
+                        <div class="slide" id="kata5">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -457,12 +454,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata6">
-                                <section class="middle">
+                        <div class="slide" id="kata6">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -506,12 +505,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata7">
-                                <section class="middle">
+                        <div class="slide" id="kata7">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -555,12 +556,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata8">
-                                <section class="middle">
+                        <div class="slide" id="kata8">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -604,12 +607,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata9">
-                                <section class="middle">
+                        <div class="slide" id="kata9">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -654,12 +659,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata10">
-                                <section class="middle">
+                        <div class="slide" id="kata10">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -701,12 +708,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata11">
-                                <section class="middle">
+                        <div class="slide" id="kata11">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -750,12 +759,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata12">
-                                <section class="middle">
+                        <div class="slide" id="kata12">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -798,12 +809,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata13">
-                                <section class="middle">
+                        <div class="slide" id="kata13">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -847,12 +860,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata14">
-                                <section class="middle">
+                        <div class="slide" id="kata14">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -894,12 +909,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata15">
-                                <section class="middle">
+                        <div class="slide" id="kata15">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -941,12 +958,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata16">
-                                <section class="middle">
+                        <div class="slide" id="kata16">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -988,12 +1007,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata17">
-                                <section class="middle">
+                        <div class="slide" id="kata17">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -1035,12 +1056,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata18">
-                                <section class="middle">
+                        <div class="slide" id="kata18">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -1082,12 +1105,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata19">
-                                <section class="middle">
+                        <div class="slide" id="kata19">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -1129,12 +1154,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata20">
-                                <section class="middle">
+                        <div class="slide" id="kata20">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -1176,12 +1203,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata21">
-                                <section class="middle">
+                        <div class="slide" id="kata21">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -1223,12 +1252,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata22">
-                                <section class="middle">
+                        <div class="slide" id="kata22">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -1270,12 +1301,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata23">
-                                <section class="middle">
+                        <div class="slide" id="kata23">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -1317,12 +1350,14 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
+                        </div>
 
-                            <div class="slide" id="kata24">
-                                <section class="middle">
+                        <div class="slide" id="kata24">
+                            <section class="middle">
+                                <div class="table-responsive" id="coba">
                                     <table class="table table-bordered table-hover table-striped"
                                         style="text-align:center">
                                         <thead>
@@ -1364,84 +1399,85 @@
                                         </tbody>
                                     </table>
                                     <button type="button" class="btn btn-primary"
-                                        onClick="window.location.reload()">Acak Kata</button>
-                                </section>
-                            </div>
+                                        onClick="window.location.reload()">Acak
+                                        Kata</button>
+                            </section>
                         </div>
-
-                        <div id="hidden-note" class="invisible" style="display: none;">
-                        </div> <!-- hidden note -->
-
-                        <aside id="help" class="sidebar invisible" style="display: hidden;">
-                            <!-- Defining sidebar help -->
-                            <table>
-                                <caption>Bantuan</caption>
-                                <tr>
-                                    <th>Pindah selanjutnya/kembali</th>
-                                    <td>&larr;&nbsp;&rarr;</td>
-                                </tr>
-                                <tr>
-                                    <th>Pindah selanjutnya</th>
-                                    <td>spacebar</td>
-                                </tr>
-                            </table>
-                        </aside>
-
                     </div>
-                </div>
-                <!-- /.row -->
 
-                <div style="margin-top:15px;" class="col-lg-4">
-                    <script type="text/javascript">
-                    function play(file) {
-                        document.getElementById('terjemahan').innerHTML = "<font color='red'><blink>Proses..." + file +
-                            "</blink></font>";
-                        $('#terjemahan').load('suara.php', 'b=1&kalimat=' + file);
-                        //alert(file);
-                    }
-                    </script>
-                    <p id="terjemahan" style="margin-bottom: 0px;"></p>
-                </div>
+                    <div id="hidden-note" class="invisible" style="display: none;">
+                    </div> <!-- hidden note -->
 
+                    <aside id="help" class="sidebar invisible" style="display: hidden;">
+                        <!-- Defining sidebar help -->
+                        <table>
+                            <caption>Bantuan</caption>
+                            <tr>
+                                <th>Pindah selanjutnya/kembali</th>
+                                <td>&larr;&nbsp;&rarr;</td>
+                            </tr>
+                            <tr>
+                                <th>Pindah selanjutnya</th>
+                                <td>spacebar</td>
+                            </tr>
+                        </table>
+                    </aside>
+
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <div style="margin-top:15px;" class="col-lg-4">
                 <script type="text/javascript">
-                function cekSlide(posHal) {
-                    //alert(posHal);
-                    if (posHal == 1) {
-                        $("#nav-prev").hide("slow");
-                    } else
-                    if (posHal == 25) {
-                        $("#nav-next").hide("slow");
-                    } else {
-                        $("#nav-prev").show("slow");
-                        $("#nav-next").show("slow");
-                    }
+                function play(file) {
+                    document.getElementById('terjemahan').innerHTML = "<font color='red'><blink>Proses..." + file +
+                        "</blink></font>";
+                    $('#terjemahan').load('suara.php', 'b=1&kalimat=' + file);
+                    //alert(file);
                 }
                 </script>
-                <div align="center" style="margin-top:30px;" class="col-lg-4">
-                    <button title="Previous" id="nav-prev" class="fa fa-arrow-left" style="display:none"></button>
-                    <button title="Jump to slide" id="slide-no">1</button>
-                    <button title="Next" id="nav-next" class="fa fa-arrow-right"></button>
-                </div>
+                <p id="terjemahan" style="margin-bottom: 0px;"></p>
+            </div>
 
-                <div align="center" style="margin-top:20px;" class="col-lg-4">
-                    <a href="index.php" class="btn btn-lg btn-primary" role="button">Menu</a>
-                    <a href="kalimat-dasar.php" class="btn btn-lg btn-primary" role="button">Level 4 »</a>
+            <script type="text/javascript">
+            function cekSlide(posHal) {
+                //alert(posHal);
+                if (posHal == 1) {
+                    $("#nav-prev").hide("slow");
+                } else
+                if (posHal == 25) {
+                    $("#nav-next").hide("slow");
+                } else {
+                    $("#nav-prev").show("slow");
+                    $("#nav-next").show("slow");
+                }
+            }
+            </script>
+            <div align="center" style="margin-top:30px;" class="col-lg-4">
+                <button title="Previous" id="nav-prev" class="fa fa-arrow-left" style="display:none"></button>
+                <button title="Jump to slide" id="slide-no">1</button>
+                <button title="Next" id="nav-next" class="fa fa-arrow-right"></button>
+            </div>
+
+            <div align="center" style="margin-top:20px;" class="col-lg-4">
+                <a href="index.php" class="btn btn-lg btn-primary" role="button">Menu</a>
+                <a href="kalimat-dasar.php" class="btn btn-lg btn-primary" role="button">Level 4 »</a>
+            </div>
+        </div>
+    </div>
+    <!-- /.content -->
+    <div class="clearfix"></div>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner bg-white">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; Universitas Trunojoyo Madura
                 </div>
             </div>
         </div>
-        <!-- /.content -->
-        <div class="clearfix"></div>
-        <!-- Footer -->
-        <footer class="site-footer">
-            <div class="footer-inner bg-white">
-                <div class="row">
-                    <div class="col-sm-6">
-                        &copy; Universitas Trunojoyo Madura
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- /.site-footer -->
+    </footer>
+    <!-- /.site-footer -->
     </div>
     <!-- /#wrapper -->
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
