@@ -289,6 +289,50 @@
                             </div>
                         </a>
                     </div>
+<<<<<<<< HEAD:kata-khusus.php
+========
+                    <div class="col-lg-6 col-md-6">
+                        <a href="kata-khusus.php" style="text-decoration: none; color: aliceblue">
+                            <div class="card" style="height: 90%;">
+                                <div class="card-body">
+                                    <div class="stat-widget-five">
+                                        <div class="stat-icon dib flat-color-1">
+                                            <img src="image/icon-petunjuk.png" width="81px" alt="logo">
+                                            <!-- <i class="pe-7s-info"></i> -->
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="text-left dib">
+                                                <div class="stat-heading">kata</div>
+                                                <div class="stat-text"><b>Khusus</b></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <a href="petunjuk.php" style="text-decoration: none; color: aliceblue">
+                            <div class="card" style="height: 90%;">
+                                <div class="card-body">
+                                    <div class="stat-widget-five">
+                                        <div class="stat-icon dib flat-color-1">
+                                            <img src="image/icon-petunjuk.png" width="81px" alt="logo">
+                                            <!-- <i class="pe-7s-info"></i> -->
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="text-left dib">
+                                                <div class="stat-heading">Petunjuk</div>
+                                                <div class="stat-text"><b>Pembelajaran</b></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+>>>>>>>> f4b93494bbcfeca90d048568cca269fe50bb506f:index.php
                 </div>
                 <!-- /Widgets -->
                 <!-- /#add-category -->
