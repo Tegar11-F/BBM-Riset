@@ -102,7 +102,7 @@
                         </li>
                         <li>
                             <a href="kata-khusus.php" style="color: white;"> <i class="menu-icon ti-agenda"
-                                    style="color: white;"></i>Kata Khusua </a>
+                                    style="color: white;"></i>Kata Khusus </a>
                         </li>
                         <li>
                             <a href="kalimat-dasar.php" style="color: white;"> <i class="menu-icon ti-agenda"
