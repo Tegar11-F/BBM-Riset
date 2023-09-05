@@ -172,7 +172,7 @@
                                 <div class="card-body">
                                     <div class="stat-widget-five">
                                         <div class="stat-icon dib flat-color-1">
-                                            <img src="image/icon-huruf.png" width="81px" alt="Logo">                                           
+                                            <img src="image/icon-badan.png" width="81px" alt="Logo">                                           
                                             <!-- <i class="pe-7s-cash"></i> -->
                                         </div>
                                         <div class="stat-content">
@@ -193,7 +193,7 @@
                                 <div class="card-body">
                                     <div class="stat-widget-five">
                                         <div class="stat-icon dib flat-color-2">
-                                        <img src="image/icon-huruf.png" width="81px" alt="Logo">    
+                                        <img src="image/icon-buah.png" width="81px" alt="Logo">    
                                         <!-- <i class="pe-7s-cart"></i> -->
                                         </div>
                                         <div class="stat-content">
@@ -214,7 +214,7 @@
                                 <div class="card-body">
                                     <div class="stat-widget-five">
                                         <div class="stat-icon dib flat-color-3">
-                                        <img src="image/icon-huruf.png" width="81px" alt="Logo">
+                                        <img src="image/icon-hewan.png" width="81px" alt="Logo">
                                         <!-- <i class="pe-7s-browser"></i> -->
                                         </div>
                                         <div class="stat-content">
@@ -235,7 +235,7 @@
                                 <div class="card-body">
                                     <div class="stat-widget-five">
                                         <div class="stat-icon dib flat-color-4">
-                                        <img src="image/icon-huruf.png" width="81px" alt="Logo">
+                                        <img src="image/icon-pujian.png" width="81px" alt="Logo">
                                         <!-- <i class="pe-7s-users"></i> -->
                                         </div>
                                         <div class="stat-content">
@@ -255,7 +255,7 @@
                                 <div class="card-body">
                                     <div class="stat-widget-five">
                                         <div class="stat-icon dib flat-color-1">
-                                        <img src="image/icon-huruf.png" width="81px" alt="Logo">    
+                                        <img src="image/icon-bunga.png" width="81px" alt="Logo">    
                                         <!-- <i class="pe-7s-cash"></i> -->
                                         </div>
                                         <div class="stat-content">
@@ -275,7 +275,7 @@
                                 <div class="card-body">
                                     <div class="stat-widget-five">
                                         <div class="stat-icon dib flat-color-1">
-                                        <img src="image/icon-huruf.png" width="81px" alt="Logo">    
+                                        <img src="image/icon-biji.png" width="81px" alt="Logo">    
                                         <!-- <i class="pe-7s-cash"></i> -->
                                         </div>
                                         <div class="stat-content">
