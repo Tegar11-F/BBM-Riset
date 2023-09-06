@@ -116,6 +116,10 @@
                                     style="color: white;"></i>Pengenalan Kata </a>
                         </li>
                         <li>
+                            <a href="kata-khusus.php" style="color: white;"> <i class="menu-icon ti-notepad"
+                                    style="color: white;"></i>Kata Khusus </a>
+                        </li>
+                        <li>
                             <a href="kalimat-dasar.php" style="color: white;"> <i class="menu-icon ti-agenda"
                                     style="color: white;"></i>Pengenalan Kalimat </a>
                         </li>
@@ -290,9 +294,9 @@
                                             </thead>
                                             <tbody>
                                                 <?php
-                                        $angka=0;
-                                        $q = mysqli_query($koneksi, "select `madura` from `kuis` order by rand() limit 4;");
-                                        while($h = mysqli_fetch_array($q)){?>
+												$angka=0;
+												$q = mysqli_query($koneksi, "select `madura` from `kuis` order by rand() limit 4;");
+												while($h = mysqli_fetch_array($q)){?>
                                                 <tr>
                                                     <td><img src="image/<?php echo  htmlspecialchars($h[0]); ?>.png"
                                                             width="49"></td>
@@ -304,12 +308,8 @@
                                                     </td>
                                                 </tr>
                                                 <?php }?>
-
                                             </tbody>
-
                                         </table>
-
-
 
                                         <script type="text/javascript">
                                         function koreksi_soal_gambar() {
@@ -317,7 +317,7 @@
                                             var result = "";
                                             var nilai = 0;
 
-                                            for (var i = 1; i <= 5; i++) {
+                                            for (var i = 1; i <= 4; i++) {
                                                 soal = document.getElementsByName('soal_gambar' + i)[0].value;
                                                 jawaban = document.getElementById('jawaban_gambar' + i).value;
                                                 jawaban = jawaban.toLowerCase();
@@ -393,17 +393,6 @@
                                             </tbody>
                                         </table>
 
-                                        <input type="hidden" id="focusedField" />
-                                        <br>
-                                        <button type="button" class="btn btn-warning" onClick="karakter_e()">Karakter
-                                            &egrave;</button>
-                                        <br>
-                                        <button type="button" class="btn btn-success" onClick="karakter_a()">Karakter
-                                            &acirc;</button>
-                                        <br>
-                                        <button type="button" id="nav-next" class="btn btn-danger"
-                                            onClick="koreksi_soal_indo()">Selesai</button>
-
                                         <script type="text/javascript">
                                         function koreksi_soal_indo() {
 
@@ -434,6 +423,13 @@
                                         }
                                         </script>
                                     </div>
+                                    <input type="hidden" id="focusedField" />
+                                    <button type="button" class="btn btn-warning" onClick="karakter_e()">Karakter
+                                        &egrave;</button>
+                                    <button type="button" class="btn btn-success" onClick="karakter_a()">Karakter
+                                        &acirc;</button>
+                                    <button type="button" id="nav-next" class="btn btn-danger"
+                                        onClick="koreksi_soal_indo()">Selesai</button>
                                 </section>
                             </div>
 
@@ -479,17 +475,6 @@
                                             </tbody>
                                         </table>
                                         <!--<a href="#sukukata1"><button type="button" class="btn btn-lg btn-primary" onClick="window.location.reload()">Acak Suku Kata</button></a> -->
-
-                                        <input type="hidden" id="focusedField" />
-                                        <br>
-                                        <button type="button" class="btn btn-warning" onClick="karakter_e()">Karakter
-                                            &egrave;</button>
-                                        <br>
-                                        <button type="button" class="btn btn-success" onClick="karakter_a()">Karakter
-                                            &acirc;</button>
-                                        <br>
-                                        <button type="button" id="nav-next" class="btn btn-danger"
-                                            onClick="koreksi_soal_suara()">Selesai</button>
 
                                         <script type="text/javascript">
                                         function koreksi_soal_suara() {
@@ -543,6 +528,13 @@
                                         }
                                         </script>
                                     </div>
+                                    <input type="hidden" id="focusedField" />
+                                    <button type="button" class="btn btn-warning" onClick="karakter_e()">Karakter
+                                        &egrave;</button>
+                                    <button type="button" class="btn btn-success" onClick="karakter_a()">Karakter
+                                        &acirc;</button>
+                                    <button type="button" id="nav-next" class="btn btn-danger"
+                                        onClick="koreksi_soal_suara()">Selesai</button>
                                 </section>
                             </div>
 
@@ -561,8 +553,8 @@
                                         <input type="hidden" name="gambar_hidden" id="gambar_hidden">
                                         <input type="hidden" name="indonesia_hidden" id="indonesia_hidden">
                                         <input type="hidden" name="madura_hidden" id="madura_hidden">
-                                        <button type="submit" class="btn btn-success" role="button">Cetak
-                                            Sertifikat</button>
+                                        <button type="submit" class="btn btn-success" role="button"><a href="index.php"
+                                                style="color:#ffffff">Belajar Lagi</a></button>
                                     </form>
 
                                     </script>

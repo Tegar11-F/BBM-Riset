@@ -91,7 +91,6 @@
 </head>
 
 <body>
-
     <div>
         <aside id="left-panel" class="left-panel" style="color: white;background-color: black;">
             <nav class="navbar navbar-expand-sm navbar-default" style="color: white;background-color: black;">
@@ -116,6 +115,10 @@
                                     style="color: white;"></i>Pengenalan Kata </a>
                         </li>
                         <li>
+                            <a href="kata-khusus.php" style="color: white;"> <i class="menu-icon ti-notepad"
+                                    style="color: white;"></i>Kata Khusus </a>
+                        </li>
+                        <li>
                             <a href="kalimat-dasar.php" style="color: white;"> <i class="menu-icon ti-agenda"
                                     style="color: white;"></i>Pengenalan Kalimat </a>
                         </li>
@@ -136,7 +139,6 @@
             </nav>
         </aside>
     </div>
-
     <!-- /#left-panel -->
     <!-- Right Panel -->
     <div id="right-panel" class="right-panel">
@@ -173,9 +175,6 @@
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="page-header" style="margin-bottom:2px; margin-top:2px; padding-bottom:5px;">
-                            Kamus Terjemahan
-                        </h2>
                         <ol class="breadcrumb">
                             <li>
                                 <i class="fa fa-dashboard"></i> <a href="index.php">Menu Utama</a>

@@ -167,18 +167,18 @@
                 <!-- Widgets  -->
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
-                        <a href="badan.php" style="text-decoration: none; color: aliceblue">
+                        <a href="huruf.php" style="text-decoration: none; color: aliceblue">
                             <div class="card" style="height: 90%;">
                                 <div class="card-body">
                                     <div class="stat-widget-five">
                                         <div class="stat-icon dib flat-color-1">
-                                            <img src="image/icon-badan.png" width="81px" alt="Logo">
+                                            <img src="image/icon-huruf.png" width="81px" alt="Logo">
                                             <!-- <i class="pe-7s-cash"></i> -->
                                         </div>
                                         <div class="stat-content">
                                             <div class="text-left dib">
                                                 <div class="stat-heading">Mengenal</div>
-                                                <div class="stat-text"><b> Anggota </b><br> Badan</div>
+                                                <div class="stat-text"><b> Huruf </b><br> B. Madura</div>
                                             </div>
                                         </div>
                                     </div>
@@ -188,18 +188,18 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6">
-                        <a href="nama-buah.php" style="text-decoration: none; color: aliceblue">
+                        <a href="suku-kata.php" style="text-decoration: none; color: aliceblue">
                             <div class="card" style="height: 90%;">
                                 <div class="card-body">
                                     <div class="stat-widget-five">
                                         <div class="stat-icon dib flat-color-2">
-                                            <img src="image/icon-buah.png" width="81px" alt="Logo">
+                                            <img src="image/ikon-suku.png" width="81px" alt="Logo">
                                             <!-- <i class="pe-7s-cart"></i> -->
                                         </div>
                                         <div class="stat-content">
                                             <div class="text-left dib">
                                                 <div class="stat-heading">Mengenal</div>
-                                                <div class="stat-text"><b>Nama</b> <br> Buah</div>
+                                                <div class="stat-text"><b>Suku Kata</b> <br> B. Madura</div>
                                             </div>
                                         </div>
                                     </div>
@@ -209,18 +209,18 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6">
-                        <a href="anak-hewan.php" style="text-decoration: none; color: aliceblue">
+                        <a href="kata.php" style="text-decoration: none; color: aliceblue">
                             <div class="card" style="height: 90%;">
                                 <div class="card-body">
                                     <div class="stat-widget-five">
                                         <div class="stat-icon dib flat-color-3">
-                                            <img src="image/icon-hewan.png" width="81px" alt="Logo">
+                                            <img src="image/icon-kata.png" width="81px" alt="Logo">
                                             <!-- <i class="pe-7s-browser"></i> -->
                                         </div>
                                         <div class="stat-content">
                                             <div class="text-left dib">
                                                 <div class="stat-heading">Mengenal</div>
-                                                <div class="stat-text"><b> Anak</b> <br> Hewan </div>
+                                                <div class="stat-text"><b> Kata</b> <br> B. Madura</div>
                                             </div>
                                         </div>
                                     </div>
@@ -230,18 +230,18 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6">
-                        <a href="kata-pujian.php" style="text-decoration: none; color: aliceblue">
+                        <a href="kalimat-dasar.php" style="text-decoration: none; color: aliceblue">
                             <div class="card" style="height: 90%;">
                                 <div class="card-body">
                                     <div class="stat-widget-five">
                                         <div class="stat-icon dib flat-color-4">
-                                            <img src="image/icon-pujian.png" width="81px" alt="Logo">
+                                            <img src="image/icon-kalimat.png" width="81px" alt="Logo">
                                             <!-- <i class="pe-7s-users"></i> -->
                                         </div>
                                         <div class="stat-content">
                                             <div class="text-left dib">
                                                 <div class="stat-heading">Mengenal</div>
-                                                <div class="stat-text"><b> Kata Pujian</b> <br> B. Madura</div>
+                                                <div class="stat-text"><b> Kalimat Dasar</b> <br> B. Madura</div>
                                             </div>
                                         </div>
                                     </div>
@@ -250,18 +250,18 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <a href="bunga-pohon.php" style="text-decoration: none; color: aliceblue">
+                        <a href="kamus.php" style="text-decoration: none; color: aliceblue">
                             <div class="card" style="height: 90%;">
                                 <div class="card-body">
                                     <div class="stat-widget-five">
                                         <div class="stat-icon dib flat-color-1">
-                                            <img src="image/icon-bunga.png" width="81px" alt="Logo">
+                                            <img src="image/icon-kamus.png" width="81px" alt="Logo">
                                             <!-- <i class="pe-7s-cash"></i> -->
                                         </div>
                                         <div class="stat-content">
                                             <div class="text-left dib">
-                                                <div class="stat-heading">Mengenal</div>
-                                                <div class="stat-text"><b> Nama</b> <br>Bunga Pohon</div>
+                                                <div class="stat-heading">Terjemahan</div>
+                                                <div class="stat-text"><b> Indonesia</b> - <b>Madura</b></div>
                                             </div>
                                         </div>
                                     </div>
@@ -270,18 +270,18 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <a href="nama-biji.php" style="text-decoration: none; color: aliceblue">
+                        <a href="kuis.php" style="text-decoration: none; color: aliceblue">
                             <div class="card" style="height: 90%;">
                                 <div class="card-body">
                                     <div class="stat-widget-five">
                                         <div class="stat-icon dib flat-color-1">
-                                            <img src="image/icon-biji.png" width="81px" alt="Logo">
+                                            <img src="image/icon-kuis.png" width="81px" alt="Logo">
                                             <!-- <i class="pe-7s-cash"></i> -->
                                         </div>
                                         <div class="stat-content">
                                             <div class="text-left dib">
-                                                <div class="stat-heading">Mengenal</div>
-                                                <div class="stat-text"><b>Nama</b><br>Biji Buah</div>
+                                                <div class="stat-heading">Ujian</div>
+                                                <div class="stat-text"><b>Kuis</b></div>
                                             </div>
                                         </div>
                                     </div>
@@ -289,6 +289,47 @@
                             </div>
                         </a>
                     </div>
+                    <div class="col-lg-6 col-md-6">
+                        <a href="kata-khusus.php" style="text-decoration: none; color: aliceblue">
+                            <div class="card" style="height: 90%;">
+                                <div class="card-body">
+                                    <div class="stat-widget-five">
+                                        <div class="stat-icon dib flat-color-1">
+                                            <img src="image/icon-khusus.png" width="81px" alt="logo">
+                                            <!-- <i class="pe-7s-info"></i> -->
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="text-left dib">
+                                                <div class="stat-heading">kata</div>
+                                                <div class="stat-text"><b>Khusus</b></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <a href="petunjuk.php" style="text-decoration: none; color: aliceblue">
+                            <div class="card" style="height: 90%;">
+                                <div class="card-body">
+                                    <div class="stat-widget-five">
+                                        <div class="stat-icon dib flat-color-1">
+                                            <img src="image/icon-petunjuk.png" width="81px" alt="logo">
+                                            <!-- <i class="pe-7s-info"></i> -->
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="text-left dib">
+                                                <div class="stat-heading">Petunjuk</div>
+                                                <div class="stat-text"><b>Pembelajaran</b></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
                 <!-- /Widgets -->
                 <!-- /#add-category -->

@@ -116,6 +116,10 @@
                                     style="color: white;"></i>Pengenalan Kata </a>
                         </li>
                         <li>
+                            <a href="kata-khusus.php" style="color: white;"> <i class="menu-icon ti-notepad"
+                                    style="color: white;"></i>Kata Khusus </a>
+                        </li>
+                        <li>
                             <a href="kalimat-dasar.php" style="color: white;"> <i class="menu-icon ti-agenda"
                                     style="color: white;"></i>Pengenalan Kalimat </a>
                         </li>

@@ -26,9 +26,8 @@
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <link rel="apple-touch-icon" href="https://i.imgur.com/QRAUqs9.png">
-    <link rel="shortcut icon" href="https://i.imgur.com/QRAUqs9.png">
-
+    <link rel="apple-touch-icon" href="image/sakera.png">
+    <link rel="shortcut icon" href="image/sakera.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
@@ -100,7 +99,7 @@
                     <ul class="nav navbar-nav">
                         <li class="menu-title" style="color: white;">Belajar Bahasa Madura</li>
                         <li class="active" style="color: white;background-color: black;">
-                            <a href="utama.php" style="color: white; "><i class="menu-icon ti-home"
+                            <a href="index.php" style="color: white; "><i class="menu-icon ti-home"
                                     style="color: white;"></i>Menu Utama </a>
                         </li>
                         <li>
@@ -116,7 +115,7 @@
                                     style="color: white;"></i>Pengenalan Kata </a>
                         </li>
                         <li>
-                            <a href="kata-khusus.php" style="color: white;"> <i class="menu-icon ti-agenda"
+                            <a href="kata-khusus.php" style="color: white;"> <i class="menu-icon ti-notepad"
                                     style="color: white;"></i>Kata Khusus </a>
                         </li>
                         <li>
@@ -140,7 +139,6 @@
             </nav>
         </aside>
     </div>
-
     <!-- /#left-panel -->
     <!-- Right Panel -->
     <div id="right-panel" class="right-panel">
@@ -149,7 +147,7 @@
             <div class="top-left">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="./"><img src="image/logo-bbm.png" alt="Logo"></a>
-                    <a class="navbar-brand hidden" href="./"><img src="image/logo-bbm.png" alt="Logo"></a>
+                    <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
                     <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
                 </div>
             </div>
@@ -176,21 +174,12 @@
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="page-header" style="margin-bottom: 2px;margin-top: 2px;padding-bottom: 5px;">
-                            Mengenal Anak Hewan
-                        </h2>
                         <ol class="breadcrumb">
                             <li>
-                                <i class="fa fa-dashboard"></i> <a href="utama.php">Menu Utama</a>
-                            </li>
-                            <li>
-                                <a href="huruf.php">Mengenal Huruf</a>
-                            </li>
-                            <li>
-                                <a href="suku-kata.php">Mengenal Suku Kata</a>
+                                <i class="fa fa-dashboard"></i> <a href="index.php">Menu Utama</a>
                             </li>
                             <li class="active">
-                                Kata Bahasa Madura
+                                Khusus B.Madura
                             </li>
                         </ol>
                     </div>
@@ -223,7 +212,7 @@
 
                             <div class="slide" id="kata1">
                                 <section class="middle">
-                                    <div class="table-responsive">
+                                    <div class="table-responsive" id="coba">
                                         <table class="table table-bordered table-hover table-striped"
                                             style="text-align:center">
                                             <thead>
@@ -326,7 +315,7 @@
                 </div>
 
                 <div align="center" style="margin-top:20px;" class="col-lg-4">
-                    <a href="utama.php" class="btn btn-lg btn-primary" role="button">Menu</a>
+                    <a href="index.php" class="btn btn-lg btn-primary" role="button">Menu</a>
                     <a href="kalimat-dasar.php" class="btn btn-lg btn-primary" role="button">Level 4 »</a>
                 </div>
             </div>
