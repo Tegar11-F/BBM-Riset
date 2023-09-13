@@ -221,7 +221,7 @@
                 }
                 </script>
 
-                <script type="text/javascript">
+                <!-- <script type="text/javascript">
                 function cek_bahasa() {
                     var pil = document.getElementById("bahasa").value
                     if (pil == 2) {
@@ -230,15 +230,19 @@
                         document.getElementById("tingkat").disabled = false
                     }
                 }
-                </script>
+                </script> -->
+
 
                 <form action="" method="post" onSubmit="return false">
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <h4>Masukkan Kalimat</h4>
+                            <!-- <h4>Masukkan Kalimat</h4> -->
+                            <div id="kotak1">
+                                <button id="bahasa" value="1" onclick="toggleContent('kotak1', 'kotak2')"
+                                    style="border: none;">Indonesia</button>
+                            </div>
                             <textarea name="input" id="input" class="form-control" rows="7"
-                                placeholder="tekan tombol spasi setelah input kata"><?php if(isset($_POST['input']))
-                echo stripslashes($_POST['input']);?></textarea>
+                                placeholder="Tekan Tombol Spasi Setelah Input Kata"><?php if(isset($_POST['input']))echo stripslashes($_POST['input']);?></textarea>
                             <br>
                             <button type="button" class="btn btn-warning" onClick="karakter_e()">Karakter
                                 &egrave;</button>
@@ -262,7 +266,7 @@
                         }
                         </script>
 
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <label>Terjemahan</label>
                             <select name="bahasa" id="bahasa" onChange="cek_bahasa()" class="form-control">
                                 <?php if($_POST['bahasa']==1 || $_POST['bahasa']==""){ ?>
@@ -273,33 +277,40 @@
                                 <option value="2" selected="selected">Madura-Indonesia</option>
                                 <?php } ?>
                             </select>
-                        </div>
+                        </div> -->
 
-                        <div class="form-group">
-                            <label>Tingkatan</label>
-                            <select name="tingkat" id="tingkat" class="form-control">
-                                <?php if($_POST['tingkat']==1 || $_POST['tingkat']==""){ ?>
-                                <option value="1" selected="selected">Enje'-Iyah</option>
-                                <option value="2">Engghi-Enten</option>
-                                <option value="3">Engghi-Bhunten</option>
-                                <?php }elseif($_POST['tingkat']==2){?>
-                                <option value="1">Enje'-Iyeh</option>
-                                <option value="2" selected="selected">Engghi-Enten</option>
-                                <option value="3">Engghi-Bhunten</option>
-                                <?php }else{ ?>
-                                <option value="1">Enje'-Iyeh</option>
-                                <option value="2">Engghi-Enten</option>
-                                <option value="3" selected="selected">Engghi-Bhunten</option>
-                                <?php } ?>
-                            </select>
-                        </div>
+
                     </div>
                 </form>
                 <!-- /.row -->
 
                 <div class="col-lg-6 text-left">
                     <div class="form-group">
-                        <h4>Hasil Terjemahan</h4>
+                        <!-- <h4>Hasil Terjemahan</h4> -->
+                        <div id="kotak2" style="display: inline-block; margin-right: 10px;">
+                            <button id="bahasa" value="2" onclick="toggleContent('kotak2', 'kotak1')"
+                                style="border: none;" disabled>Madura</button>
+                        </div>
+                        <div class="form-group" style="display: inline-block;">
+                            <!-- <label>Tingkatan</label> -->
+                            <select name="tingkat" id="tingkat" class="form-control">
+                                <optgroup label="Tingkatan">
+                                    <?php if($_POST['tingkat']==1 || $_POST['tingkat']==""){ ?>
+                                    <option value="1" selected="selected">Enje'-Iyah</option>
+                                    <option value="2">Engghi-Enten</option>
+                                    <option value="3">Engghi-Bhunten</option>
+                                    <?php }elseif($_POST['tingkat']==2){?>
+                                    <option value="1">Enje'-Iyeh</option>
+                                    <option value="2" selected="selected">Engghi-Enten</option>
+                                    <option value="3">Engghi-Bhunten</option>
+                                    <?php }else{ ?>
+                                    <option value="1">Enje'-Iyeh</option>
+                                    <option value="2">Engghi-Enten</option>
+                                    <option value="3" selected="selected">Engghi-Bhunten</option>
+                                    <?php } ?>
+                                </optgroup>
+                            </select>
+                        </div>
                         <div class="panel panel-default" style=" height:155px;">
                             <div class="panel-body">
                                 <p id="terjemahan">.::Belum Ada Inputan::.</p>
@@ -308,6 +319,64 @@
                     </div>
                 </div>
                 <!-- /.row -->
+
+                <!-- <script type="text/javascript">
+                function cek_bahasa() {
+                    var pil = document.getElementById("bahasa").value;
+                    if (pil == 2) {
+                        document.getElementById("tingkat").disabled = true;
+                    } else {
+                        document.getElementById("tingkat").disabled = false;
+                    }
+                }
+                </script> -->
+
+
+                <script>
+                function fungsiKotak1() {
+                    // Logika yang akan dijalankan saat tombol pada kotak 1 ditekan
+                    console.log("Tombol di kotak 1 ditekan");
+                }
+
+                function fungsiKotak2() {
+                    // Logika yang akan dijalankan saat tombol pada kotak 2 ditekan
+                    console.log("Tombol di kotak 2 ditekan");
+                }
+
+                function toggleContent(idToToggle, idToReset) {
+                    var kotakToToggle = document.getElementById(idToToggle);
+                    var buttonToToggle = kotakToToggle.querySelector("button");
+
+                    var kotakToReset = document.getElementById(idToReset);
+                    var buttonToReset = kotakToReset.querySelector("button");
+
+                    if (buttonToToggle.value === "1") {
+                        buttonToToggle.value = "2";
+                        buttonToToggle.textContent = "Madura";
+
+                        buttonToReset.value = "1";
+                        buttonToReset.textContent = "Indonesia";
+
+                        // Menjalankan fungsiKotak1 saat tombol pada kotak 1 ditekan
+                        fungsiKotak1();
+
+                        // Disable the select option in kotak 1
+                        document.getElementById("tingkat").disabled = true;
+                    } else {
+                        buttonToToggle.value = "1";
+                        buttonToToggle.textContent = "Indonesia";
+
+                        buttonToReset.value = "2";
+                        buttonToReset.textContent = "Madura";
+
+                        // Menjalankan fungsiKotak2 saat tombol pada kotak 2 ditekan
+                        fungsiKotak2();
+
+                        // Enable the select option in kotak 1
+                        document.getElementById("tingkat").disabled = false;
+                    }
+                }
+                </script>
 
                 <div class="col-lg-12" style="text-align:right;">
                     <a href="index.php" class="btn btn-lg btn-primary" role="button">Menu</a>

@@ -324,7 +324,7 @@
 
                                                 if (jawaban == soal) {
                                                     result += "Tebak " + i + " Jawaban \"" + jawaban + "\" Benar\n\n";
-                                                    nilai += 20;
+                                                    nilai += 25;
                                                 } else {
                                                     result += "Tebak " + i + " Jawaban \"" + jawaban +
                                                         "\" Salah Yang Benar \"" + soal + "\"\n\n";
