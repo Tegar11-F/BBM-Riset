@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> fajar
 <head>
 
     <meta charset="utf-8">
@@ -442,4 +446,8 @@
 
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> fajar

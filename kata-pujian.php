@@ -91,7 +91,10 @@
 </head>
 
 <body>
+<<<<<<< HEAD
 
+=======
+>>>>>>> fajar
     <div>
         <aside id="left-panel" class="left-panel" style="color: white;background-color: black;">
             <nav class="navbar navbar-expand-sm navbar-default" style="color: white;background-color: black;">
@@ -175,7 +178,10 @@
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
+<<<<<<< HEAD
 
+=======
+>>>>>>> fajar
                         <ol class="breadcrumb">
                             <li>
                                 <i class="fa fa-dashboard"></i> <a href="index.php">Menu Utama</a>
@@ -196,7 +202,97 @@
 
                         <div class="slides">
                             <!-- Defining slides -->
+<<<<<<< HEAD
                             <div class="slide" id="slide1">
+=======
+
+                            <div class="slide" id="slide1">
+                            <section class="middle">
+                            <div class="table-responsive" id="coba">
+                            <?php
+                            // Koneksi ke database (pastikan Anda telah melakukan koneksi ke database sebelumnya)
+                            require_once("koneksi.php");
+                            require_once("fsa.php");
+
+                            // Tentukan jumlah item per halaman
+                            $itemsPerPage = 5;
+
+                            // Hitung total baris dalam database
+                            $totalRowsQuery = "SELECT COUNT(*) FROM `kata_khusus` WHERE jenis='pangalem' AND `madura` LIKE '%'";
+                            $totalRowsResult = mysqli_query($koneksi, $totalRowsQuery);
+                            $totalRows = mysqli_fetch_array($totalRowsResult)[0];
+
+                            // Hitung total halaman
+                            $totalPages = ceil($totalRows / $itemsPerPage);
+
+                            // Tentukan nomor halaman saat ini dari URL
+                            $page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+                            // Pastikan nomor halaman tidak kurang dari 1 atau lebih besar dari total halaman yang tersedia
+                            if ($page < 1) {
+                                $page = 1;
+                            } elseif ($page > $totalPages) {
+                                $page = $totalPages;
+                            }
+
+                            // Hitung klausa LIMIT SQL
+                            $offset = ($page - 1) * $itemsPerPage;
+
+                            // Query database untuk mengambil data yang dipaginasi
+                            $query = "SELECT `madura`, `indonesia` FROM `kata_khusus` WHERE jenis='pangalem' AND `madura` LIKE '%' ORDER BY RAND() LIMIT $offset, $itemsPerPage";
+                            $result = mysqli_query($koneksi, $query);
+                            ?>
+
+                            <table class="table table-bordered table-hover table-striped" style="text-align:center">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:center">No</th>
+                                        <th style="text-align:center">Indonesia</th>
+                                        <th style="text-align:center">Kata Madura</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    $nomor = $offset + 1; // Inisialisasi nomor pada halaman saat ini
+
+                                    while ($h = mysqli_fetch_array($result)) {
+                                    ?>
+                                    <tr>
+                                        <td>
+                                            <?php echo $nomor; ?> <!-- Tampilkan nomor otomatis di sini -->
+                                        </td>
+                                        <td>
+                                            <h5><?php echo $h['indonesia']; ?></h5>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-success"
+                                                onClick="play('<?php echo $h['madura']; ?>')"><?php echo $h['madura']; ?></button>
+                                        </td>
+                                    </tr>
+                                    <?php
+                                    $nomor++; // Tambahkan nomor setiap kali baris data selesai diproses
+                                    }
+                                    ?>
+                                </tbody>
+                            </table>
+
+                            <!-- Tautan Paginasi -->
+                            <ul class="pagination">
+                                <?php
+                                for ($i = 1; $i <= $totalPages; $i++) {
+                                    $activeClass = ($i == $page) ? "active" : "";
+                                ?>
+                                <li class="page-item <?php echo $activeClass; ?>">
+                                    <a class="page-link" href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
+                                </li>
+                                <?php
+                                }
+                                ?>
+                            </ul>
+                        </div>
+                    </section>
+                            <div class="slide" id="slide2">
+>>>>>>> fajar
                                 <!-- Defining single slide -->
                                 <section class="middle">
                                     <h2 style="color:#31708f">
@@ -206,6 +302,7 @@
                                         Melanjutkan.</h3>
                                 </section>
                             </div>
+<<<<<<< HEAD
 
                             <?php
                         require_once("koneksi.php");
@@ -260,11 +357,18 @@
                                     </div>
                                 </section>
                             </div>
+=======
+                        </div>
+
+
+
+>>>>>>> fajar
                         </div>
 
                         <div id="hidden-note" class="invisible" style="display: none;">
                         </div> <!-- hidden note -->
 
+<<<<<<< HEAD
                         <aside id="help" class="sidebar invisible" style="display: hidden;">
                             <!-- Defining sidebar help -->
                             <table>
@@ -280,6 +384,8 @@
                             </table>
                         </aside>
 
+=======
+>>>>>>> fajar
                     </div>
                 </div>
                 <!-- /.row -->
@@ -310,6 +416,7 @@
                     }
                 }
                 </script>
+<<<<<<< HEAD
                 <div align="center" style="margin-top:30px;" class="col-lg-4">
                     <button title="Previous" id="nav-prev" class="fa fa-arrow-left" style="display:none"></button>
                     <button title="Jump to slide" id="slide-no">1</button>
@@ -319,17 +426,32 @@
                 <div align="center" style="margin-top:20px;" class="col-lg-4">
                     <a href="index.php" class="btn btn-lg btn-primary" role="button">Menu</a>
                     <a href="kalimat-dasar.php" class="btn btn-lg btn-primary" role="button">Level 4 »</a>
+=======
+                <div align="center" style="margin-top:20px;" class="col-lg-4">
+                    <a href="index.php" class="btn btn-lg btn-primary" role="button">Menu</a>
+                    <a href="kata-khusus.php" class="btn btn-lg btn-primary" role="button">Kembali »</a>
+>>>>>>> fajar
                 </div>
             </div>
         </div>
         <!-- /.content -->
         <div class="clearfix"></div>
         <!-- Footer -->
+<<<<<<< HEAD
         <footer class="site-footer">
             <div class="footer-inner bg-white">
                 <div class="row">
                     <div class="col-sm-6">
                         &copy; Universitas Trunojoyo Madura
+=======
+        <footer class="" id="footerhp">
+            <div class="footer-inner bg-white text-center">
+                <div class="row">
+                    <div class="col-sm-12" id="batton-footer">
+                        <br><br><br><br><br><br>
+                        &copy; Universitas Trunojoyo Madura
+                        <br><br><br>
+>>>>>>> fajar
                     </div>
                 </div>
             </div>
