@@ -390,11 +390,13 @@
         <!-- /.content -->
         <div class="clearfix"></div>
         <!-- Footer -->
-        <footer class="site-footer">
-            <div class="footer-inner bg-white">
+        <footer class="" id="footerhp">
+            <div class="footer-inner bg-white text-center">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-12" id="batton-footer">
+                        <br><br><br><br><br><br>
                         &copy; Universitas Trunojoyo Madura
+                        <br><br><br>
                     </div>
                 </div>
             </div>
