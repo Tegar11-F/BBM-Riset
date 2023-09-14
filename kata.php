@@ -181,7 +181,7 @@
                                 <i class="fa fa-dashboard"></i> <a href="index.php">Menu Utama</a>
                             </li>
                             <li class="active">
-                                Kata Bahasa Madura
+                                Kata B. Madura
                             </li>
                         </ol>
                     </div>
@@ -1457,7 +1457,6 @@
                 }
             }
             </script>
-<<<<<<< HEAD
             <div align="center" style="margin-top:30px;" class="col-lg-4">
                 <button title="Previous" id="nav-prev" class="fa fa-arrow-left" style="display:none"></button>
                 <button title="Jump to slide" id="slide-no">1</button>
@@ -1473,46 +1472,19 @@
     <!-- /.content -->
     <div class="clearfix"></div>
     <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-inner bg-white">
+    <!-- Footer -->
+    <footer class="" id="footerhp">
+        <div class="footer-inner bg-white text-center">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-12" id="batton-footer">
+                    <br><br><br><br><br><br>
                     &copy; Universitas Trunojoyo Madura
+                    <br><br><br>
                 </div>
             </div>
         </div>
     </footer>
     <!-- /.site-footer -->
-=======
-                <div align="center" style="margin-top:30px;" class="col-lg-4">
-                    <button title="Previous" id="nav-prev" class="fa fa-arrow-left" style="display:none"></button>
-                    <button title="Jump to slide" id="slide-no">1</button>
-                    <button title="Next" id="nav-next" class="fa fa-arrow-right"></button>
-                </div>
-
-                <div align="center" style="margin-top:20px;" class="col-lg-4">
-                    <a href="index.php" class="btn btn-lg btn-primary" role="button">Menu</a>
-                    <a href="kata.php" class="btn btn-lg btn-primary" role="button">Level 3
-                        <?php echo htmlspecialchars("»"); ?></a>
-                </div>
-            </div>
-        </div>
-        <!-- /.content -->
-        <div class="clearfix"></div>
-        <!-- Footer -->
-        <footer class="" id="footerhp">
-            <div class="footer-inner bg-white text-center">
-                <div class="row">
-                    <div class="col-sm-12" id="batton-footer">
-                        <br><br><br><br><br><br>
-                        &copy; Universitas Trunojoyo Madura
-                        <br><br><br>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- /.site-footer -->
->>>>>>> fajar
     </div>
     <!-- /#wrapper -->
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>

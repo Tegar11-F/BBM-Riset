@@ -86,19 +86,12 @@
     #cellPaiChart {
         height: 160px;
     }
-<<<<<<< HEAD
-=======
     
->>>>>>> fajar
     </style>
 
 </head>
 
 <body>
-<<<<<<< HEAD
-
-=======
->>>>>>> fajar
     <div>
         <aside id="left-panel" class="left-panel" style="color: white;background-color: black;">
             <nav class="navbar navbar-expand-sm navbar-default" style="color: white;background-color: black;">
@@ -202,9 +195,6 @@
 
                         <div class="slides">
                             <!-- Defining slides -->
-<<<<<<< HEAD
-                            <div class="slide" id="slide1">
-=======
 
                             <div class="slide" id="slide1">
                             <section class="middle">
@@ -292,7 +282,6 @@
                         </div>
                     </section>
                             <div class="slide" id="slide2">
->>>>>>> fajar
                                 <!-- Defining single slide -->
                                 <section class="middle">
                                     <h2 style="color:#31708f">
@@ -302,90 +291,15 @@
                                         Melanjutkan.</h3>
                                 </section>
                             </div>
-<<<<<<< HEAD
-
-                            <?php
-                        require_once("koneksi.php");
-                        require_once("fsa.php");
-                    ?>
-
-                            <div class="slide" id="kata1">
-                                <section class="middle">
-                                    <div class="table-responsive" id="coba">
-                                        <table class="table table-bordered table-hover table-striped"
-                                            style="text-align:center">
-                                            <thead>
-                                                <tr>
-                                                    <th style="text-align:center">Indonesia</th>
-                                                    <th style="text-align:center">Kata Madura</th>
-                                                    <th style="text-align:center">Suku Kata</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <?php
-                                        $q = mysqli_query($koneksi, "SELECT `madura`,`indonesia` FROM `kata_khusus` WHERE jenis='anak hewan' AND `madura` LIKE '%' ORDER BY RAND() LIMIT 5;");
-                                        while ($h = mysqli_fetch_array($q)) {
-                                        ?>
-                                                <tr>
-                                                    <td>
-                                                        <h5><?php echo $h['indonesia']; ?></h5>
-                                                    </td>
-                                                    <td><button type="button" class="btn btn-success"
-                                                            onClick=play("<?php echo $h['madura']; ?>")><?php echo $h['madura']; ?></button>
-                                                    </td>
-                                                    <td>
-                                                        <?php
-                                                    $input_kata = proses_fsa($h['madura']);
-                                                    $pecah = explode('-', $input_kata);
-                                                    $i = 0;
-                                                    while ($i < sizeof($pecah) - 1) {
-                                                    ?>
-                                                        <button type="button" class="btn btn-success"
-                                                            onClick=play("<?php echo $pecah[$i]; ?>")><?php echo $pecah[$i]; ?></button>
-                                                        <?php
-                                                        $i++;
-                                                    }
-                                                    ?>
-                                                    </td>
-                                                </tr>
-                                                <?php } ?>
-
-                                            </tbody>
-                                        </table>
-                                        <button type="button" class="btn btn-primary"
-                                            onClick="window.location.reload()">Acak Kata</button>
-                                    </div>
-                                </section>
-                            </div>
-=======
                         </div>
 
 
 
->>>>>>> fajar
                         </div>
 
                         <div id="hidden-note" class="invisible" style="display: none;">
                         </div> <!-- hidden note -->
 
-<<<<<<< HEAD
-                        <aside id="help" class="sidebar invisible" style="display: hidden;">
-                            <!-- Defining sidebar help -->
-                            <table>
-                                <caption>Bantuan</caption>
-                                <tr>
-                                    <th>Pindah selanjutnya/kembali</th>
-                                    <td>&larr;&nbsp;&rarr;</td>
-                                </tr>
-                                <tr>
-                                    <th>Pindah selanjutnya</th>
-                                    <td>spacebar</td>
-                                </tr>
-                            </table>
-                        </aside>
-
-=======
->>>>>>> fajar
                     </div>
                 </div>
                 <!-- /.row -->
@@ -416,34 +330,15 @@
                     }
                 }
                 </script>
-<<<<<<< HEAD
-                <div align="center" style="margin-top:30px;" class="col-lg-4">
-                    <button title="Previous" id="nav-prev" class="fa fa-arrow-left" style="display:none"></button>
-                    <button title="Jump to slide" id="slide-no">1</button>
-                    <button title="Next" id="nav-next" class="fa fa-arrow-right"></button>
-                </div>
-
-                <div align="center" style="margin-top:20px;" class="col-lg-4">
-                    <a href="index.php" class="btn btn-lg btn-primary" role="button">Menu</a>
-                    <a href="kalimat-dasar.php" class="btn btn-lg btn-primary" role="button">Level 4 »</a>
-=======
                 <div align="center" style="margin-top:20px;" class="col-lg-4">
                     <a href="index.php" class="btn btn-lg btn-primary" role="button">Menu</a>
                     <a href="kata-khusus.php" class="btn btn-lg btn-primary" role="button">Kembali »</a>
->>>>>>> fajar
                 </div>
             </div>
         </div>
         <!-- /.content -->
         <div class="clearfix"></div>
         <!-- Footer -->
-<<<<<<< HEAD
-        <footer class="site-footer">
-            <div class="footer-inner bg-white">
-                <div class="row">
-                    <div class="col-sm-6">
-                        &copy; Universitas Trunojoyo Madura
-=======
         <footer class="" id="footerhp">
             <div class="footer-inner bg-white text-center">
                 <div class="row">
@@ -451,7 +346,6 @@
                         <br><br><br><br><br><br>
                         &copy; Universitas Trunojoyo Madura
                         <br><br><br>
->>>>>>> fajar
                     </div>
                 </div>
             </div>

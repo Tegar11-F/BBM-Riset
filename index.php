@@ -342,15 +342,10 @@
         <footer class="" id="footerhp">
             <div class="footer-inner bg-white text-center">
                 <div class="row">
-<<<<<<< HEAD
-                    <div class="col-sm-6">
-                        &copy; Universitas Trunojoyo Madura
-=======
                     <div class="col-sm-12" id="batton-footer">
                         <br>
                         &copy; Universitas Trunojoyo Madura
                         <br><br>
->>>>>>> fajar
                     </div>
                 </div>
             </div>

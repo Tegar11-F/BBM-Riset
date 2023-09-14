@@ -601,13 +601,6 @@
         <!-- /.content -->
         <div class="clearfix"></div>
         <!-- Footer -->
-<<<<<<< HEAD
-        <footer class="site-footer">
-            <div class="footer-inner bg-white">
-                <div class="row">
-                    <div class="col-sm-6">
-                        &copy; Universitas Trunojoyo Madura
-=======
         <footer class="" id="footerhp">
             <div class="footer-inner bg-white text-center">
                 <div class="row">
@@ -615,7 +608,6 @@
                         <br><br><br><br><br><br>
                         &copy; Universitas Trunojoyo Madura
                         <br><br><br>
->>>>>>> fajar
                     </div>
                 </div>
             </div>
