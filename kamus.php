@@ -221,28 +221,53 @@
                 }
                 </script>
 
-                <!-- <script type="text/javascript">
-                function cek_bahasa() {
-                    var pil = document.getElementById("bahasa").value
-                    if (pil == 2) {
-                        document.getElementById("tingkat").disabled = true
-                    } else {
-                        document.getElementById("tingkat").disabled = false
-                    }
-                }
-                </script> -->
+
+                <div style="text-align: center;">
+                    <div class="kuishp" id="kotak1"
+                        style="display: inline-block; margin-left: 10px; text-align: center;">
+                        <button id="bahasa" value="1" onclick="toggleContent('kotak1', 'kotak2')"
+                            style="border: none; width: 100px; ">Indonesia</button>
+                    </div>
+                    <div class="swap" id="kotak1" style="display: inline-block; text-align: center;">
+                        <button id="bahasa" value="1" onclick="toggleContent('kotak1', 'kotak2')"
+                            style="border: none; background-color: #ffffff;"><i class="fa fa-exchange"></i></button>
+                    </div>
+                    <div id="kotak2" style="display: inline-block; text-align: center;">
+                        <button id="bahasa" value="2" onclick="toggleContent('kotak2', 'kotak1')"
+                            style="border: none; width: 100px;" disabled>Madura</button>
+                    </div>
+                    <div class="form-group" style="display: inline-block; width: 7px; text-align: center;">
+                        <select name="tingkat" id="tingkat" class="form-control"
+                            style="border: none; font-weight: bold;">
+                            <optgroup label="Tingkatan">
+                                <?php if($_POST['tingkat']==1 || $_POST['tingkat']==""){ ?>
+                                <option value="1" selected="selected">Enje'-Iyah</option>
+                                <option value="2">Engghi-Enten</option>
+                                <option value="3">Engghi-Bhunten</option>
+                                <?php }elseif($_POST['tingkat']==2){?>
+                                <option value="1">Enje'-Iyeh</option>
+                                <option value="2" selected="selected">Engghi-Enten</option>
+                                <option value="3">Engghi-Bhunten</option>
+                                <?php }else{ ?>
+                                <option value="1">Enje'-Iyeh</option>
+                                <option value="2">Engghi-Enten</option>
+                                <option value="3" selected="selected">Engghi-Bhunten</option>
+                                <?php } ?>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+
 
 
                 <form action="" method="post" onSubmit="return false">
                     <div class="col-lg-6">
                         <div class="form-group">
                             <!-- <h4>Masukkan Kalimat</h4> -->
-                            <div id="kotak1">
-                                <button id="bahasa" value="1" onclick="toggleContent('kotak1', 'kotak2')"
-                                    style="border: none;">Indonesia</button>
-                            </div>
+
                             <textarea name="input" id="input" class="form-control" rows="7"
-                                placeholder="Tekan Tombol Spasi Setelah Input Kata"><?php if(isset($_POST['input']))echo stripslashes($_POST['input']);?></textarea>
+                                placeholder="Tekan Tombol Spasi Setelah Input Kata"
+                                style="font-weight: bold;"><?php if(isset($_POST['input']))echo stripslashes($_POST['input']);?></textarea>
                             <br>
                             <button type="button" class="btn btn-warning" onClick="karakter_e()">Karakter
                                 &egrave;</button>
@@ -287,30 +312,7 @@
                 <div class="col-lg-6 text-left">
                     <div class="form-group">
                         <!-- <h4>Hasil Terjemahan</h4> -->
-                        <div id="kotak2" style="display: inline-block; margin-right: 10px;">
-                            <button id="bahasa" value="2" onclick="toggleContent('kotak2', 'kotak1')"
-                                style="border: none;" disabled>Madura</button>
-                        </div>
-                        <div class="form-group" style="display: inline-block;">
-                            <!-- <label>Tingkatan</label> -->
-                            <select name="tingkat" id="tingkat" class="form-control">
-                                <optgroup label="Tingkatan">
-                                    <?php if($_POST['tingkat']==1 || $_POST['tingkat']==""){ ?>
-                                    <option value="1" selected="selected">Enje'-Iyah</option>
-                                    <option value="2">Engghi-Enten</option>
-                                    <option value="3">Engghi-Bhunten</option>
-                                    <?php }elseif($_POST['tingkat']==2){?>
-                                    <option value="1">Enje'-Iyeh</option>
-                                    <option value="2" selected="selected">Engghi-Enten</option>
-                                    <option value="3">Engghi-Bhunten</option>
-                                    <?php }else{ ?>
-                                    <option value="1">Enje'-Iyeh</option>
-                                    <option value="2">Engghi-Enten</option>
-                                    <option value="3" selected="selected">Engghi-Bhunten</option>
-                                    <?php } ?>
-                                </optgroup>
-                            </select>
-                        </div>
+
                         <div class="panel panel-default" style=" height:155px;">
                             <div class="panel-body">
                                 <p id="terjemahan">.::Belum Ada Inputan::.</p>

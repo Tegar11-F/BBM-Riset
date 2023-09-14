@@ -272,6 +272,13 @@ section.middle {
 	width: 1000px;
 }
 
+.kuishp{
+	margin-left: -10000px;
+}
+.swap{
+	margin-right: 10000px;
+}
+
 }
 
 /*
