@@ -267,19 +267,6 @@ section.middle {
 	font-size:20em;
 }
 
-@media (max-width: 480px) {
-#hp{
-	width: 1000px;
-}
-
-.kuishp{
-	margin-left: -10000px;
-}
-.swap{
-	margin-right: 10000px;
-}
-
-}
 
 /*
 header {
