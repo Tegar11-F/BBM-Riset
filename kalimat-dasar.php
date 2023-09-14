@@ -181,14 +181,14 @@
                                 <i class="fa fa-dashboard"></i> <a href="index.php">Menu Utama</a>
                             </li>
                             <li class="active">
-                                Huruf Bahasa Madura
+                                Kalimat B.Madura
                             </li>
                         </ol>
                     </div>
                 </div>
                 <!-- /.row -->
 
-                <div class="col-lg-12" style="height:430px;">
+                <div style="height:430px;" class="col-lg-12">
                     <div class="presentation"
                         style="    position: absolute;height: 100%;width: 100%;    left: 0px;    top: 0px;    display: block;    overflow: hidden;background: #ffffff; /* Mengatur warna latar belakang menjadi putih */">
                         <!-- Defining the main presentation -->
@@ -200,116 +200,144 @@
                                 <!-- Defining single slide -->
                                 <section class="middle">
                                     <h2 style="color:#31708f">
-                                        <strong>Bahasa Madura Mengenal <br> 7 Huruf Vokal dan <br> 27 Huruf
-                                            vokal</strong>
+                                        <strong>Kalimat adalah gabungan <br> dua kata
+                                            atau lebih<br> dan harus memiliki subyek <br>
+                                            dan predikat sebagai syarat <br>
+                                            minimal sebuah kalimat.</strong>
                                     </h2>
                                     <h3>Tekan <span id="left-init-key" class="key">&rarr;</span> di Keyboard <br> untuk
                                         Melanjutkan.</h3>
                                 </section>
                             </div>
 
-                            <div class="slide" id="vokal1">
+                            <div class="slide" id="tingkat">
                                 <section class="middle">
-                                    <p style="color:#5cb85c; font-size:10em;">Aa</p>
+                                    <h2 style="color:#31708f">
+                                        <strong>Pada dasarnya bahasa Madura <br> dibagi menjadi <br>tiga tingkat bahasa:
+                                        </strong>
+                                    </h2>
+                                    <hr>
+                                    <h3>Tingkat Bahasa Umum <br> <em>(iyâ-enjâ’)</em></h2>
+                                        <hr>
+                                        <h3>Tingkat Bahasa Menengah <br> <em>(engghi-enten)</em></h2>
+                                            <hr>
+                                            <h3>Tingkat Bahasa Tinggi/Halus <br> <em>(Èngghi-bhunten)</em></h2>
+                                                <hr>
                                 </section>
                             </div>
 
-                            <div class="slide" id="vokal2">
+                            <div class="slide" id="kal">
                                 <section class="middle">
-                                    <p style="color:#5bc0de; font-size:10em;"> Ââ</p>
+                                    <h2 style="color:#3c763d">
+                                        <strong>Contoh Kalimat <br> Tingkat Bahasa Umum
+                                            <br><em>(iyâ-enjâ’)</em></strong>
+                                    </h2>
                                 </section>
                             </div>
 
-                            <div class="slide" id="vokal3">
+                            <div class="slide" id="kalimat1">
                                 <section class="middle">
-                                    <p style="color:#f0ad4e; font-size:10em;"> Ee</p>
+                                    <div class="alert alert-success">
+                                        <h2>Apa bâ’na ella tao</h2>
+                                        <h3><em>(Apakah kamu sudah tahu)</em></h3>
+                                    </div>
+                                    <!-- <button type="button" onClick="play('apa bâ\'na ella tao?')" class="btn btn-lg btn-success">Ucapkan</button> -->
                                 </section>
                             </div>
 
-                            <div class="slide" id="vokal4">
+                            <div class="slide" id="kalimat2">
                                 <section class="middle">
-                                    <p style="color:#d9534f; font-size:10em;">Èè</p>
+                                    <div class="alert alert-info">
+                                        <h2>Sapa nyamana bâ’na, lè’</h2>
+                                        <h3><em>(Siapa nama kamu, dik)</em></h3>
+                                    </div>
                                 </section>
                             </div>
 
-                            <div class="slide" id="vokal5">
+                            <div class="slide" id="kalimat3">
                                 <section class="middle">
-                                    <p style="color:#5cb85c; font-size:10em;">Ii</p>
+                                    <div class="alert alert-warning">
+                                        <h2>Èntara dâ’ kamma</h2>
+                                        <h3><em>(hendak pergi kemana)</em></h3>
+                                    </div>
+                                    <!-- <button type="button" onClick="play('èntara dâ\' kamma')" class="btn btn-lg btn-warning">Ucapkan</button> -->
                                 </section>
                             </div>
 
-                            <div class="slide" id="vokal6">
+                            <div class="slide" id="kal2">
                                 <section class="middle">
-                                    <p style="color:#5bc0de; font-size:10em;">Oo</p>
+                                    <h2 style="color:#31708f">
+                                        <strong>Contoh Kalimat <br> Tingkat Bahasa Menengah
+                                            <br><em>(engghi-enten)</em></strong>
+                                    </h2>
                                 </section>
                             </div>
 
-                            <div class="slide" id="vokal7">
+                            <div class="slide" id="kalimat4">
                                 <section class="middle">
-                                    <p style="color:#f0ad4e; font-size:10em;">Uu</p>
+                                    <div class="alert alert-danger">
+                                        <h2>Napè dhika pon tao</h2>
+                                        <h3><em>(Apakah kamu sudah tau) </em></h3>
+                                    </div>
+                                    <!-- <button type="button" onClick="play('napè dhika pon tao')" class="btn btn-lg btn-danger">Ucapkan</button> -->
                                 </section>
                             </div>
 
-                            <div class="slide" id="konsonan">
+                            <div class="slide" id="kalimat5">
                                 <section class="middle">
-                                    <h2 style="color:#31708f"><strong>Huruf Konsonan <br> Bahasa Madura</strong></h2>
-                                    <h3>Tekan <span id="left-init-key" class="key">&rarr;</span> di Keyboard <br> untuk
-                                        Melanjutkan.</h3>
+                                    <div class="alert alert-success">
+                                        <h2>Sèra nyamana dhika, lè’</h2>
+                                        <h3><em>(Siapa nama kamu, dik) </em></h3>
+                                    </div>
                                 </section>
                             </div>
 
-                            <div class="slide" id="konsonan1">
+                            <div class="slide" id="kalimat6">
                                 <section class="middle">
-                                    <table class="table table-bordered table-hover" style="text-align:center;">
-                                        <tbody style="font-size:4em;">
-                                            <tr style="color:#d9534f">
-                                                <td>b</td>
-                                                <td>bh</td>
-                                                <td>c</td>
-                                                <td>d</td>
-                                                <td>dh</td>
-                                            </tr>
-                                            <tr style="color:#5cb85c">
-                                                <td>f</td>
-                                                <td>g</td>
-                                                <td>gh</td>
-                                                <td>h</td>
-                                                <td>j</td>
-                                            </tr>
-                                            <tr style="color:#5bc0de">
-                                                <td>jh</td>
-                                                <td>k</td>
-                                                <td>l</td>
-                                                <td>m</td>
-                                                <td>n</td>
-                                            </tr>
-                                    </table>
+                                    <div class="alert alert-info">
+                                        <h2>Èntara dâ’ ka’ amma dhika</h2>
+                                        <h3><em>(Hendak pergi kemana kamu) </em></h3>
+                                    </div>
+                                    <!-- <button type="button" onClick="play('èntara dâ\' ka\' amma dhika')" class="btn btn-lg btn-info">Ucapkan</button> -->
                                 </section>
                             </div>
 
-                            <div class="slide" id="konsonan2">
+                            <div class="slide" id="kal3">
                                 <section class="middle">
-                                    <table class="table table-bordered table-hover" style="text-align:center;">
-                                        <tbody style="font-size:4em;">
-                                            <tr style="color:#f0ad4e">
-                                                <td>ng</td>
-                                                <td>ny</td>
-                                                <td>p</td>
-                                                <td>q</td>
-                                                <td>r</td>
-                                            </tr>
-                                            <tr style="color:#d9534f">
-                                                <td>s</td>
-                                                <td>t</td>
-                                                <td>v</td>
-                                                <td>w</td>
-                                                <td>x</td>
-                                            </tr>
-                                            <tr style="color:#428bca">
-                                                <td>y</td>
-                                                <td>z</td>
-                                            </tr>
-                                    </table>
+                                    <h2 style="color:#8a6d3b">
+                                        <strong>Contoh Kalimat <br> Tingkat Bahasa Tinggi/Halus
+                                            <br><em>(Èngghi-bhunten)</em></strong>
+                                    </h2>
+                                </section>
+                            </div>
+
+                            <div class="slide" id="kalimat7">
+                                <section class="middle">
+                                    <div class="alert alert-warning">
+                                        <h2>Ponapa panjhennengngan ampon mèyarsa</h2>
+                                        <h3><em>(Apakah kamu sudah tau) </em></h3>
+                                    </div>
+                                    <!-- <button type="button" onClick="play('ponapa panjhennengan ampon mèyarsa')" class="btn btn-lg btn-warning">Ucapkan</button> -->
+                                </section>
+                            </div>
+
+                            <div class="slide" id="kalimat8">
+                                <section class="middle">
+                                    <div class="alert alert-danger">
+                                        <h2>Pasèra asmana panjhennengngan, lè’</h2>
+                                        <h3><em>(Siapa nama kamu, dik) </em></h3>
+                                    </div>
+                                    <!-- <button type="button" onClick="play('pasèra asmana panjhennenggan lè\'')" class="btn btn-lg btn-danger">Ucapkan</button> -->
+                                </section>
+                            </div>
+
+                            <div class="slide" id="kalimat9">
+                                <section class="middle">
+                                    <div class="alert alert-success">
+                                        <h2>Bhâdhi mèyossa dâ' ka’ dimma</h2>
+                                        <h3><em>(Hendak pergi kemana kamu) </em></h3>
+                                    </div>
+                                    <!-- <button type="button" onClick="play('bhâdhi mèyossa dâ ka' dimma')" class="btn btn-lg btn-success">Ucapkan</button> -->
                                 </section>
                             </div>
                         </div>
@@ -342,7 +370,7 @@
                         if (posHal == 1) {
                             $("#nav-prev").hide("slow");
                         } else
-                        if (posHal == 11) {
+                        if (posHal == 14) {
                             $("#nav-next").hide("slow");
                         } else {
                             $("#nav-prev").show("slow");
@@ -354,28 +382,30 @@
                     function playHuruf(posHal) {
                         // mengambil id hasilAudio
                         document.getElementById('hasilAudio');
-                        if (posHal == 'vokal1') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=a'); // load = halaman.php
-                        } else if (posHal == 'vokal2') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=â');
-                        } else if (posHal == 'vokal3') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=e');
-                        } else if (posHal == 'vokal4') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=è');
-                        } else if (posHal == 'vokal5') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=i');
-                        } else if (posHal == 'vokal6') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=o');
-                        } else if (posHal == 'vokal7') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=u');
+                        if (posHal == 'kalimat1') {
+                            $('#hasilAudio').load('suara.php', 'kalimat=apa bâ\'na ella tao');
+                        } else if (posHal == 'kalimat2') {
+                            $('#hasilAudio').load('suara.php', 'kalimat=sapa nyamana bâ\'na lè\'');
+                        } else if (posHal == 'kalimat3') {
+                            $('#hasilAudio').load('suara.php', 'kalimat=èntara dâ\' kamma');
+                        } else if (posHal == 'kalimat4') {
+                            $('#hasilAudio').load('suara.php', 'kalimat=napè dhika pon tao');
+                        } else if (posHal == 'kalimat5') {
+                            $('#hasilAudio').load('suara.php', 'kalimat=sèra nyamana dhika lè\'');
+                        } else if (posHal == 'kalimat6') {
+                            $('#hasilAudio').load('suara.php', 'kalimat=èntara dâ\' ka\' amma dhika');
+                        } else if (posHal == 'kalimat7') {
+                            $('#hasilAudio').load('suara.php', 'kalimat=ponapa panjhennengngan ampon mèyarsa');
+                        } else if (posHal == 'kalimat8') {
+                            $('#hasilAudio').load('suara.php', 'kalimat=pasèra asmana panjhennengngan, lè\'');
+                        } else if (posHal == 'kalimat9') {
+                            $('#hasilAudio').load('suara.php', 'kalimat=bhâdhi mèyossa dâ\' ka\' dimma');
                         } else {
-                            // kalau tidak ketemu halaman kosong
                             document.getElementById('hasilAudio').innerHTML = "";
                         }
                         //alert(file);
                     }
                     </script>
-                    <!-- Menampilkan hasil dari hasil audio-->
                     <p id="hasilAudio" style="margin-bottom: 0px;"></p>
                 </div>
 
@@ -387,7 +417,7 @@
 
                 <div align="center" style="margin-top:20px;" class="col-lg-4">
                     <a href="index.php" class="btn btn-lg btn-primary" role="button">Menu</a>
-                    <a href="suku-kata.php" class="btn btn-lg btn-primary" role="button">Level 2 »</a>
+                    <a href="kuis.php" class="btn btn-lg btn-primary" role="button">Kuis »</a>
                 </div>
 
             </div>

@@ -51,23 +51,22 @@ body {
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	opacity: 0.35;
-
-	-webkit-transform: scale(0.8) translateZ(0);
-	-moz-transform: scale(0.8);
-	-o-transform: scale(0.8);
-
-	-webkit-transition-property: margin, -webkit-transform, opacity;
-	-webkit-transition-duration: 0.3s, 0.3s, 0.3s;
-	-webkit-transition-timing-function: ease-in-out;
-
-	-moz-transition-property: margin, -moz-transform, opacity;
-	-moz-transition-duration: 0.3s, 0.3s, 0.3s;
-	-moz-transition-timing-function: ease-in-out;
-
-	-o-transition-property: margin, -moz-transform, opacity;
-	-o-transition-duration: 0.3s, 0.3s, 0.3s;
-	-o-transition-timing-function: ease-in-out;
 }
+
+@media (max-width: 480px) {
+	#coba{
+		width: 300px;
+		margin: auto;
+	}
+	
+	}
+
+@media (max-width: 480px) {
+		#cobakuis{
+			margin-left: 125px;
+			margin-right: 10px;
+			width: 60%;
+		}}
 
 .slide:nth-child(even) {
 	border-radius: 10px 30px 10px 30px;
@@ -266,6 +265,20 @@ section.middle {
 #text{
 	color:#00F;
 	font-size:20em;
+}
+
+@media (max-width: 480px) {
+#hp{
+	width: 1000px;
+}
+
+.kuishp{
+	margin-left: -10000px;
+}
+.swap{
+	margin-right: 10000px;
+}
+
 }
 
 /*

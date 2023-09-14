@@ -91,7 +91,6 @@
 </head>
 
 <body>
-
     <div>
         <aside id="left-panel" class="left-panel" style="color: white;background-color: black;">
             <nav class="navbar navbar-expand-sm navbar-default" style="color: white;background-color: black;">
@@ -140,7 +139,6 @@
             </nav>
         </aside>
     </div>
-
     <!-- /#left-panel -->
     <!-- Right Panel -->
     <div id="right-panel" class="right-panel">
@@ -181,14 +179,14 @@
                                 <i class="fa fa-dashboard"></i> <a href="index.php">Menu Utama</a>
                             </li>
                             <li class="active">
-                                Huruf Bahasa Madura
+                                Khusus B.Madura
                             </li>
                         </ol>
                     </div>
                 </div>
                 <!-- /.row -->
 
-                <div class="col-lg-12" style="height:430px;">
+                <div style="height:430px;" class="col-lg-12">
                     <div class="presentation"
                         style="    position: absolute;height: 100%;width: 100%;    left: 0px;    top: 0px;    display: block;    overflow: hidden;background: #ffffff; /* Mengatur warna latar belakang menjadi putih */">
                         <!-- Defining the main presentation -->
@@ -196,200 +194,145 @@
 
                         <div class="slides">
                             <!-- Defining slides -->
+
                             <div class="slide" id="slide1">
+                            <section class="middle">
+                            <div class="table-responsive" id="coba">
+                            <?php
+                            // Koneksi ke database (pastikan Anda telah melakukan koneksi ke database sebelumnya)
+                            require_once("koneksi.php");
+                            require_once("fsa.php");
+
+                            // Tentukan jumlah item per halaman
+                            $itemsPerPage = 5;
+
+                            // Hitung total baris dalam database
+                            $totalRowsQuery = "SELECT COUNT(*) FROM `kata_khusus` WHERE jenis='pangalem' AND `madura` LIKE '%'";
+                            $totalRowsResult = mysqli_query($koneksi, $totalRowsQuery);
+                            $totalRows = mysqli_fetch_array($totalRowsResult)[0];
+
+                            // Hitung total halaman
+                            $totalPages = ceil($totalRows / $itemsPerPage);
+
+                            // Tentukan nomor halaman saat ini dari URL
+                            $page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+                            // Pastikan nomor halaman tidak kurang dari 1 atau lebih besar dari total halaman yang tersedia
+                            if ($page < 1) {
+                                $page = 1;
+                            } elseif ($page > $totalPages) {
+                                $page = $totalPages;
+                            }
+
+                            // Hitung klausa LIMIT SQL
+                            $offset = ($page - 1) * $itemsPerPage;
+
+                            // Query database untuk mengambil data yang dipaginasi
+                            $query = "SELECT `madura`, `indonesia` FROM `kata_khusus` WHERE jenis='pangalem' AND `madura` LIKE '%' ORDER BY RAND() LIMIT $offset, $itemsPerPage";
+                            $result = mysqli_query($koneksi, $query);
+                            ?>
+
+                            <table class="table table-bordered table-hover table-striped" style="text-align:center">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:center">No</th>
+                                        <th style="text-align:center">Indonesia</th>
+                                        <th style="text-align:center">Kata Madura</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    $nomor = $offset + 1; // Inisialisasi nomor pada halaman saat ini
+
+                                    while ($h = mysqli_fetch_array($result)) {
+                                    ?>
+                                    <tr>
+                                        <td>
+                                            <?php echo $nomor; ?> <!-- Tampilkan nomor otomatis di sini -->
+                                        </td>
+                                        <td>
+                                            <h5><?php echo $h['indonesia']; ?></h5>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-success"
+                                                onClick="play('<?php echo $h['madura']; ?>')"><?php echo $h['madura']; ?></button>
+                                        </td>
+                                    </tr>
+                                    <?php
+                                    $nomor++; // Tambahkan nomor setiap kali baris data selesai diproses
+                                    }
+                                    ?>
+                                </tbody>
+                            </table>
+
+                            <!-- Tautan Paginasi -->
+                            <ul class="pagination">
+                                <?php
+                                for ($i = 1; $i <= $totalPages; $i++) {
+                                    $activeClass = ($i == $page) ? "active" : "";
+                                ?>
+                                <li class="page-item <?php echo $activeClass; ?>">
+                                    <a class="page-link" href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
+                                </li>
+                                <?php
+                                }
+                                ?>
+                            </ul>
+                        </div>
+                    </section>
+                            <div class="slide" id="slide2">
                                 <!-- Defining single slide -->
                                 <section class="middle">
                                     <h2 style="color:#31708f">
-                                        <strong>Bahasa Madura Mengenal <br> 7 Huruf Vokal dan <br> 27 Huruf
-                                            vokal</strong>
+                                        <strong>Kata adalah gabungan dari <br> suku kata yang memiliki arti.</strong>
                                     </h2>
                                     <h3>Tekan <span id="left-init-key" class="key">&rarr;</span> di Keyboard <br> untuk
                                         Melanjutkan.</h3>
                                 </section>
                             </div>
+                        </div>
 
-                            <div class="slide" id="vokal1">
-                                <section class="middle">
-                                    <p style="color:#5cb85c; font-size:10em;">Aa</p>
-                                </section>
-                            </div>
 
-                            <div class="slide" id="vokal2">
-                                <section class="middle">
-                                    <p style="color:#5bc0de; font-size:10em;"> Ââ</p>
-                                </section>
-                            </div>
 
-                            <div class="slide" id="vokal3">
-                                <section class="middle">
-                                    <p style="color:#f0ad4e; font-size:10em;"> Ee</p>
-                                </section>
-                            </div>
-
-                            <div class="slide" id="vokal4">
-                                <section class="middle">
-                                    <p style="color:#d9534f; font-size:10em;">Èè</p>
-                                </section>
-                            </div>
-
-                            <div class="slide" id="vokal5">
-                                <section class="middle">
-                                    <p style="color:#5cb85c; font-size:10em;">Ii</p>
-                                </section>
-                            </div>
-
-                            <div class="slide" id="vokal6">
-                                <section class="middle">
-                                    <p style="color:#5bc0de; font-size:10em;">Oo</p>
-                                </section>
-                            </div>
-
-                            <div class="slide" id="vokal7">
-                                <section class="middle">
-                                    <p style="color:#f0ad4e; font-size:10em;">Uu</p>
-                                </section>
-                            </div>
-
-                            <div class="slide" id="konsonan">
-                                <section class="middle">
-                                    <h2 style="color:#31708f"><strong>Huruf Konsonan <br> Bahasa Madura</strong></h2>
-                                    <h3>Tekan <span id="left-init-key" class="key">&rarr;</span> di Keyboard <br> untuk
-                                        Melanjutkan.</h3>
-                                </section>
-                            </div>
-
-                            <div class="slide" id="konsonan1">
-                                <section class="middle">
-                                    <table class="table table-bordered table-hover" style="text-align:center;">
-                                        <tbody style="font-size:4em;">
-                                            <tr style="color:#d9534f">
-                                                <td>b</td>
-                                                <td>bh</td>
-                                                <td>c</td>
-                                                <td>d</td>
-                                                <td>dh</td>
-                                            </tr>
-                                            <tr style="color:#5cb85c">
-                                                <td>f</td>
-                                                <td>g</td>
-                                                <td>gh</td>
-                                                <td>h</td>
-                                                <td>j</td>
-                                            </tr>
-                                            <tr style="color:#5bc0de">
-                                                <td>jh</td>
-                                                <td>k</td>
-                                                <td>l</td>
-                                                <td>m</td>
-                                                <td>n</td>
-                                            </tr>
-                                    </table>
-                                </section>
-                            </div>
-
-                            <div class="slide" id="konsonan2">
-                                <section class="middle">
-                                    <table class="table table-bordered table-hover" style="text-align:center;">
-                                        <tbody style="font-size:4em;">
-                                            <tr style="color:#f0ad4e">
-                                                <td>ng</td>
-                                                <td>ny</td>
-                                                <td>p</td>
-                                                <td>q</td>
-                                                <td>r</td>
-                                            </tr>
-                                            <tr style="color:#d9534f">
-                                                <td>s</td>
-                                                <td>t</td>
-                                                <td>v</td>
-                                                <td>w</td>
-                                                <td>x</td>
-                                            </tr>
-                                            <tr style="color:#428bca">
-                                                <td>y</td>
-                                                <td>z</td>
-                                            </tr>
-                                    </table>
-                                </section>
-                            </div>
                         </div>
 
                         <div id="hidden-note" class="invisible" style="display: none;">
                         </div> <!-- hidden note -->
 
-                        <aside id="help" class="sidebar invisible" style="display: hidden;">
-                            <!-- Defining sidebar help -->
-                            <table>
-                                <caption>Bantuan</caption>
-                                <tr>
-                                    <th>Pindah selanjutnya/kembali</th>
-                                    <td>&larr;&nbsp;&rarr;</td>
-                                </tr>
-                                <tr>
-                                    <th>Pindah selanjutnya</th>
-                                    <td>spacebar</td>
-                                </tr>
-                            </table>
-                        </aside>
                     </div>
                 </div>
                 <!-- /.row -->
 
                 <div style="margin-top:15px;" class="col-lg-4">
                     <script type="text/javascript">
-                    function cekSlide(posHal) {
-                        //alert(posHal);
-                        if (posHal == 1) {
-                            $("#nav-prev").hide("slow");
-                        } else
-                        if (posHal == 11) {
-                            $("#nav-next").hide("slow");
-                        } else {
-                            $("#nav-prev").show("slow");
-                            $("#nav-next").show("slow");
-                        }
-                    }
-
-                    // fungsi untuk memainkan audio
-                    function playHuruf(posHal) {
-                        // mengambil id hasilAudio
-                        document.getElementById('hasilAudio');
-                        if (posHal == 'vokal1') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=a'); // load = halaman.php
-                        } else if (posHal == 'vokal2') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=â');
-                        } else if (posHal == 'vokal3') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=e');
-                        } else if (posHal == 'vokal4') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=è');
-                        } else if (posHal == 'vokal5') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=i');
-                        } else if (posHal == 'vokal6') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=o');
-                        } else if (posHal == 'vokal7') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=u');
-                        } else {
-                            // kalau tidak ketemu halaman kosong
-                            document.getElementById('hasilAudio').innerHTML = "";
-                        }
+                    function play(file) {
+                        document.getElementById('terjemahan').innerHTML = "<font color='red'><blink>Proses..." + file +
+                            "</blink></font>";
+                        $('#terjemahan').load('suara.php', 'b=1&kalimat=' + file);
                         //alert(file);
                     }
                     </script>
-                    <!-- Menampilkan hasil dari hasil audio-->
-                    <p id="hasilAudio" style="margin-bottom: 0px;"></p>
+                    <p id="terjemahan" style="margin-bottom: 0px;"></p>
                 </div>
 
-                <div align="center" style="margin-top:30px;" class="col-lg-4">
-                    <button title="Previous" id="nav-prev" class="fa fa-arrow-left" style="display:none"></button>
-                    <button title="Jump to slide" id="slide-no">1</button>
-                    <button title="Next" id="nav-next" class="fa fa-arrow-right"></button>
-                </div>
-
+                <script type="text/javascript">
+                function cekSlide(posHal) {
+                    //alert(posHal);
+                    if (posHal == 1) {
+                        $("#nav-prev").hide("slow");
+                    } else
+                    if (posHal == 25) {
+                        $("#nav-next").hide("slow");
+                    } else {
+                        $("#nav-prev").show("slow");
+                        $("#nav-next").show("slow");
+                    }
+                }
+                </script>
                 <div align="center" style="margin-top:20px;" class="col-lg-4">
                     <a href="index.php" class="btn btn-lg btn-primary" role="button">Menu</a>
-                    <a href="suku-kata.php" class="btn btn-lg btn-primary" role="button">Level 2 »</a>
+                    <a href="kata-khusus.php" class="btn btn-lg btn-primary" role="button">Kembali »</a>
                 </div>
-
             </div>
         </div>
         <!-- /.content -->

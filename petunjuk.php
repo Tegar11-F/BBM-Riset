@@ -176,220 +176,188 @@
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
+                        <h2 class="page-header" style="margin-bottom:2px; margin-top:2px; padding-bottom:5px;">
+                            Petunjuk Belajar Bahasa Madura
+                        </h2>
                         <ol class="breadcrumb">
                             <li>
                                 <i class="fa fa-dashboard"></i> <a href="index.php">Menu Utama</a>
                             </li>
                             <li class="active">
-                                Huruf Bahasa Madura
+                                Petunjuk
                             </li>
                         </ol>
                     </div>
                 </div>
                 <!-- /.row -->
 
-                <div class="col-lg-12" style="height:430px;">
-                    <div class="presentation"
-                        style="    position: absolute;height: 100%;width: 100%;    left: 0px;    top: 0px;    display: block;    overflow: hidden;background: #ffffff; /* Mengatur warna latar belakang menjadi putih */">
-                        <!-- Defining the main presentation -->
-                        <div id="presentation-counter">Proses...</div>
-
-                        <div class="slides">
-                            <!-- Defining slides -->
-                            <div class="slide" id="slide1">
-                                <!-- Defining single slide -->
-                                <section class="middle">
-                                    <h2 style="color:#31708f">
-                                        <strong>Bahasa Madura Mengenal <br> 7 Huruf Vokal dan <br> 27 Huruf
-                                            vokal</strong>
-                                    </h2>
-                                    <h3>Tekan <span id="left-init-key" class="key">&rarr;</span> di Keyboard <br> untuk
-                                        Melanjutkan.</h3>
-                                </section>
-                            </div>
-
-                            <div class="slide" id="vokal1">
-                                <section class="middle">
-                                    <p style="color:#5cb85c; font-size:10em;">Aa</p>
-                                </section>
-                            </div>
-
-                            <div class="slide" id="vokal2">
-                                <section class="middle">
-                                    <p style="color:#5bc0de; font-size:10em;"> Ââ</p>
-                                </section>
-                            </div>
-
-                            <div class="slide" id="vokal3">
-                                <section class="middle">
-                                    <p style="color:#f0ad4e; font-size:10em;"> Ee</p>
-                                </section>
-                            </div>
-
-                            <div class="slide" id="vokal4">
-                                <section class="middle">
-                                    <p style="color:#d9534f; font-size:10em;">Èè</p>
-                                </section>
-                            </div>
-
-                            <div class="slide" id="vokal5">
-                                <section class="middle">
-                                    <p style="color:#5cb85c; font-size:10em;">Ii</p>
-                                </section>
-                            </div>
-
-                            <div class="slide" id="vokal6">
-                                <section class="middle">
-                                    <p style="color:#5bc0de; font-size:10em;">Oo</p>
-                                </section>
-                            </div>
-
-                            <div class="slide" id="vokal7">
-                                <section class="middle">
-                                    <p style="color:#f0ad4e; font-size:10em;">Uu</p>
-                                </section>
-                            </div>
-
-                            <div class="slide" id="konsonan">
-                                <section class="middle">
-                                    <h2 style="color:#31708f"><strong>Huruf Konsonan <br> Bahasa Madura</strong></h2>
-                                    <h3>Tekan <span id="left-init-key" class="key">&rarr;</span> di Keyboard <br> untuk
-                                        Melanjutkan.</h3>
-                                </section>
-                            </div>
-
-                            <div class="slide" id="konsonan1">
-                                <section class="middle">
-                                    <table class="table table-bordered table-hover" style="text-align:center;">
-                                        <tbody style="font-size:4em;">
-                                            <tr style="color:#d9534f">
-                                                <td>b</td>
-                                                <td>bh</td>
-                                                <td>c</td>
-                                                <td>d</td>
-                                                <td>dh</td>
-                                            </tr>
-                                            <tr style="color:#5cb85c">
-                                                <td>f</td>
-                                                <td>g</td>
-                                                <td>gh</td>
-                                                <td>h</td>
-                                                <td>j</td>
-                                            </tr>
-                                            <tr style="color:#5bc0de">
-                                                <td>jh</td>
-                                                <td>k</td>
-                                                <td>l</td>
-                                                <td>m</td>
-                                                <td>n</td>
-                                            </tr>
-                                    </table>
-                                </section>
-                            </div>
-
-                            <div class="slide" id="konsonan2">
-                                <section class="middle">
-                                    <table class="table table-bordered table-hover" style="text-align:center;">
-                                        <tbody style="font-size:4em;">
-                                            <tr style="color:#f0ad4e">
-                                                <td>ng</td>
-                                                <td>ny</td>
-                                                <td>p</td>
-                                                <td>q</td>
-                                                <td>r</td>
-                                            </tr>
-                                            <tr style="color:#d9534f">
-                                                <td>s</td>
-                                                <td>t</td>
-                                                <td>v</td>
-                                                <td>w</td>
-                                                <td>x</td>
-                                            </tr>
-                                            <tr style="color:#428bca">
-                                                <td>y</td>
-                                                <td>z</td>
-                                            </tr>
-                                    </table>
-                                </section>
+                <h4>Aplikasi Belajar Bahasa Madura adalah media untuk belajar bagaimana mengucapkan dan menulis dalam
+                    Bahasa Madura</h4>
+                <br>
+                <h4>Sistem ini terdiri dari beberapa tingkatan antara lain :</h4>
+                <h4>1. Pengenalan Huruf Bahasa Madura</h4>
+                <h5>
+                    Pada Halaman ini diberikan beberapa huruf vokal dan konsonan Bahasa Madura serta cara pengucapannya
+                    berupa audio/suara
+                </h5>
+                <br>
+                <h4>2. Pengenalan Suku Kata Bahasa Madura</h4>
+                <h5>Pada halaman ini diberikan beberapa suku kata Bahasa Madura serta cara pengucapannya</h5>
+                <br>
+                <h4>3. Pengenalan Kata Madura</h4>
+                <h5>
+                    Pada halaman ini diberikan beberapa kata Bahasa Madura, pemenggalan suku kata,
+                    terjemahan dalam Bahasa Indonesia serta cara pengucapannya
+                </h5>
+                <br>
+                <h4>4. Pengenalan Kalimat Bahasa Madura</h4>
+                <h5>
+                    Pada halaman ini diberikan beberapa kalimat Bahasa Madura, terjemahan dalam Bahasa Indonesia serta
+                    cara pengucapannya.
+                    <br>
+                    Kalimat yang dikenalkan terdiri dari tiga tingkatan yaitu tingkat bahasa umum, menengah,
+                    tinggi/halus.
+                </h5>
+                <h5>
+                    User juga dapat melakukan input manual dengan masukan kata/kalimat Bahasa Indonesia yang diucapkan
+                    dalam Bahasa Madura
+                </h5>
+                <br>
+                <h4>5. Kamus Terjemahan</h4>
+                <h5>
+                    Kamus Bahasa Madura ini dapat menerjemahkan Bahasa Indonesia ke Bahasa Madura,
+                    atau Bahasa Madura ke Bahasa Indonesia
+                </h5>
+                <br>
+                <h4>6. Kuis/Ujian</h4>
+                <h5>Kuis yang disajikan berupa latihan bagaimana menuliskan kata Bahasa Madura sesuai dengan suara dan
+                    gambar yang diberikan.</h5>
+                <h5>Ada tiga model kuis dan masing-masing terdiri dari lima soal antara lain: </h5>
+                <h5>
+                    a. Soal berupa gambar bagian tubuh manusia,
+                    user ditugaskan untuk menuliskan nama gambar tersebut dalam Bahasa Madura ènggi bhunten.
+                    Setiap jawaban benar akan mendapat nilai 20 dan jika salah akan diberikan nilai nol.
+                </h5>
+                <h5>
+                    b. Soal berupa audio kata Bahasa Madura, user ditugaskan untuk menuliskan arti dalam Bahasa
+                    Indonesia.
+                    Setiap jawaban benar akan mendapat nilai 20 dan jika salah akan diberikan nilai nol.
+                </h5>
+                <h5>
+                    c. Soal berupa audio kata Bahasa Madura, user ditugaskan untuk menuliskan kata dari suara tersebut.
+                    Setiap jawaban benar akan mendapat nilai 20 dan jika salah akan diberikan nilai nol.
+                </h5>
+                <br>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div>
+                                        <h4>Tentang Bahasa Madura</h4>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div id="hidden-note" class="invisible" style="display: none;">
-                        </div> <!-- hidden note -->
-
-                        <aside id="help" class="sidebar invisible" style="display: hidden;">
-                            <!-- Defining sidebar help -->
-                            <table>
-                                <caption>Bantuan</caption>
-                                <tr>
-                                    <th>Pindah selanjutnya/kembali</th>
-                                    <td>&larr;&nbsp;&rarr;</td>
-                                </tr>
-                                <tr>
-                                    <th>Pindah selanjutnya</th>
-                                    <td>spacebar</td>
-                                </tr>
-                            </table>
-                        </aside>
+                        <a href="page/madura.php">
+                            <div class="panel-footer">
+                                <span class="pull-left">Mulai</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <!-- /.row -->
 
-                <div style="margin-top:15px;" class="col-lg-4">
-                    <script type="text/javascript">
-                    function cekSlide(posHal) {
-                        //alert(posHal);
-                        if (posHal == 1) {
-                            $("#nav-prev").hide("slow");
-                        } else
-                        if (posHal == 11) {
-                            $("#nav-next").hide("slow");
-                        } else {
-                            $("#nav-prev").show("slow");
-                            $("#nav-next").show("slow");
-                        }
-                    }
-
-                    // fungsi untuk memainkan audio
-                    function playHuruf(posHal) {
-                        // mengambil id hasilAudio
-                        document.getElementById('hasilAudio');
-                        if (posHal == 'vokal1') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=a'); // load = halaman.php
-                        } else if (posHal == 'vokal2') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=â');
-                        } else if (posHal == 'vokal3') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=e');
-                        } else if (posHal == 'vokal4') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=è');
-                        } else if (posHal == 'vokal5') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=i');
-                        } else if (posHal == 'vokal6') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=o');
-                        } else if (posHal == 'vokal7') {
-                            $('#hasilAudio').load('suara.php', 'kalimat=u');
-                        } else {
-                            // kalau tidak ketemu halaman kosong
-                            document.getElementById('hasilAudio').innerHTML = "";
-                        }
-                        //alert(file);
-                    }
-                    </script>
-                    <!-- Menampilkan hasil dari hasil audio-->
-                    <p id="hasilAudio" style="margin-bottom: 0px;"></p>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div>
+                                        <h4>Tingkat Bahasa Madura</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="page/tingkat-bahasa.php">
+                            <div class="panel-footer">
+                                <span class="pull-left">Mulai</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
-                <div align="center" style="margin-top:30px;" class="col-lg-4">
-                    <button title="Previous" id="nav-prev" class="fa fa-arrow-left" style="display:none"></button>
-                    <button title="Jump to slide" id="slide-no">1</button>
-                    <button title="Next" id="nav-next" class="fa fa-arrow-right"></button>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div>
+                                        <h4>Keunikan Bahasa Madura</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="page/keunikan.php">
+                            <div class="panel-footer">
+                                <span class="pull-left">Mulai</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
-                <div align="center" style="margin-top:20px;" class="col-lg-4">
-                    <a href="index.php" class="btn btn-lg btn-primary" role="button">Menu</a>
-                    <a href="suku-kata.php" class="btn btn-lg btn-primary" role="button">Level 2 »</a>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div>
+                                        <h4>Ejaan BM yang Disempurnakan</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="page/ejaan.php">
+                            <div class="panel-footer">
+                                <span class="pull-left">Mulai</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
+                <br>
+                <br>
+                <br>
+                <h3 style="text-align:center;">Tutorial Penggunaan Aplikasi</h3>
+                <div align="center" class="col-lg-12">
+                    <figure>
+                        <video controls id="video_player">
+                            <source src="video/Petunjuk.mp4" type="video/mp4">
+                        </video>
+                    </figure>
 
+                </div>
+                <div class="col-lg-12" style="text-align:center">
+                    <a href="huruf.php" class="btn btn-primary btn-lg" role="button">Mulai Belajar »</a>
+                </div>
             </div>
         </div>
         <!-- /.content -->
