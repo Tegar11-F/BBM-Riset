@@ -289,7 +289,27 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="angka.php" style="text-decoration: none; color: aliceblue">
+                            <div class="card" style="height: 90%;">
+                                <div class="card-body">
+                                    <div class="stat-widget-five">
+                                        <div class="stat-icon dib flat-color-1">
+                                            <img src="image/icon-kuis.png" width="81px" alt="Logo">
+                                            <!-- <i class="pe-7s-cash"></i> -->
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="text-left dib">
+                                                <div class="stat-heading">Belajar</div>
+                                                <div class="stat-text"><b>Angka</b></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
                         <a href="kata-khusus.php" style="text-decoration: none; color: aliceblue">
                             <div class="card" style="height: 90%;">
                                 <div class="card-body">
@@ -309,7 +329,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <a href="petunjuk.php" style="text-decoration: none; color: aliceblue">
                             <div class="card" style="height: 90%;">
                                 <div class="card-body">
