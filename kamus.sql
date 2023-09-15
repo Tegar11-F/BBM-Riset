@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 03, 2023 at 03:21 PM
+-- Generation Time: Sep 15, 2023 at 06:06 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -11628,7 +11628,32 @@ INSERT INTO `kamus` (`id`, `madura`, `indonesia`, `keterangan`, `tingkatan`) VAL
 (11629, 'klambih', 'baju', 'noun', 'null'),
 (11632, 'mahasiswa', 'mahasiswa', 'noun', 'lomrah'),
 (11634, 'makam', 'kubur', 'noun', NULL),
-(11637, 'tahu', 'tahu', 'noun', 'lomrah');
+(11637, 'tahu', 'tahu', 'noun', 'lomrah'),
+(11699, 'settong', '1', 'angka', NULL),
+(11700, 'dhuwe\'', '2', 'angka', NULL),
+(11701, 'tello\'', '3', 'angka', NULL),
+(11702, 'emmpa\'', '4', 'angka', NULL),
+(11703, 'lema\'', '5', 'angka', NULL),
+(11704, 'ennem', '6', 'angka', NULL),
+(11705, 'petto\'', '7', 'angka', NULL),
+(11706, 'bellu\'', '8', 'angka', NULL),
+(11707, 'sanga\'', '9', 'angka', NULL),
+(11708, 'sapolo', '10', 'angka', NULL),
+(11709, 'sabeles', '11', 'angka', NULL),
+(11710, 'dubeles', '12', 'angka', NULL),
+(11711, 'tellobeles', '13', 'angka', NULL),
+(11712, 'pa\'beles', '14', 'angka', NULL),
+(11713, 'lemabeles', '15', 'angka', NULL),
+(11714, 'nembelles', '16', 'angka', NULL),
+(11715, 'pettobelles', '17', 'angka', NULL),
+(11716, 'bellubelles', '18', 'angka', NULL),
+(11717, 'sangabelles', '19', 'angka', NULL),
+(11718, 'dupolo', '20', 'angka', NULL),
+(11719, 'salekor', '21', 'angka', NULL),
+(11720, 'dulekor', '22', 'angka', NULL),
+(11721, 'tellolekor', '23', 'angka', NULL),
+(11722, 'pa\'lekor', '24', 'angka', NULL),
+(11723, 'sageme\'', '25', 'angka', NULL);
 
 -- --------------------------------------------------------
 
@@ -13862,7 +13887,7 @@ ALTER TABLE `imbuhan_madura`
 -- AUTO_INCREMENT for table `kamus`
 --
 ALTER TABLE `kamus`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11699;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11724;
 
 --
 -- AUTO_INCREMENT for table `kata_khusus`
