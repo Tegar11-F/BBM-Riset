@@ -140,12 +140,12 @@
             </div>
             <div class="top-right">
                 <div class="header-menu">
-                    <div class="header-left">
-                        <!-- <button class="search-trigger"><i class="fa fa-search"></i></button> -->
+                    <!-- <div class="header-left">
+                        <button class="search-trigger"><i class="fa fa-search"></i></button>
                         <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search w-100">
                             <input type="text" class="form-control" placeholder="             Searching" />
                         </form>
-                    </div>
+                    </div> -->
 
                     <div class="user-area dropdown float-right">
                         <a href="#" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
